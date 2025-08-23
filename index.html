@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styleguide</title>
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="/app.css">
 </head>
 <body class="min-h-screen bg-gray-50">
     <div class="container mx-auto px-4 py-12">
@@ -12,31 +12,153 @@
         
         <section class="mb-12">
             <h2 class="text-2xl font-semibold text-gray-800 mb-4">Typography</h2>
-            <div class="space-y-2">
-                <h1 class="text-4xl font-bold">Heading 1</h1>
-                <h2 class="text-3xl font-semibold">Heading 2</h2>
-                <h3 class="text-2xl font-medium">Heading 3</h3>
-                <p class="text-base text-gray-600">This is a paragraph with regular text.</p>
-                <p class="text-sm text-gray-500">This is small text.</p>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="text-lg font-medium mb-2">Font Weights</h3>
+                    <p class="font-thin text-lg">Proxima Nova Thin (100)</p>
+                    <p class="font-light text-lg">Proxima Nova Light (300)</p>
+                    <p class="font-normal text-lg">Proxima Nova Regular (400)</p>
+                    <p class="font-semibold text-lg">Proxima Nova Semibold (600)</p>
+                    <p class="font-bold text-lg">Proxima Nova Bold (700)</p>
+                    <p class="font-extrabold text-lg">Proxima Nova Extra Bold (800)</p>
+                    <p class="font-black text-lg">Proxima Nova Black (900)</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium mb-2">Headings</h3>
+                    <h1 class="text-6xl font-bold">Heading 1</h1>
+                    <h2 class="text-5xl font-bold">Heading 2</h2>
+                    <h3 class="text-4xl font-semibold">Heading 3</h3>
+                    <h4 class="text-3xl font-semibold">Heading 4</h4>
+                    <h5 class="text-2xl font-medium">Heading 5</h5>
+                    <h6 class="text-xl font-medium">Heading 6</h6>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium mb-2">Body Text</h3>
+                    <p class="text-base text-gray-700">This is a paragraph with regular text using Proxima Nova font family.</p>
+                    <p class="text-sm text-gray-600">This is small text with lighter weight.</p>
+                    <p class="text-xs text-gray-500">This is extra small text for captions and labels.</p>
+                </div>
             </div>
         </section>
 
         <section class="mb-12">
             <h2 class="text-2xl font-semibold text-gray-800 mb-4">Colors</h2>
-            <div class="grid grid-cols-4 gap-4">
-                <div class="bg-blue-500 h-20 rounded flex items-center justify-center text-white">Blue</div>
-                <div class="bg-green-500 h-20 rounded flex items-center justify-center text-white">Green</div>
-                <div class="bg-red-500 h-20 rounded flex items-center justify-center text-white">Red</div>
-                <div class="bg-gray-500 h-20 rounded flex items-center justify-center text-white">Gray</div>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-lg font-medium mb-2">Gray</h3>
+                    <div class="grid grid-cols-10 gap-1">
+                        <div class="bg-gray-50 h-12 rounded flex items-center justify-center text-gray-900 text-xs">50</div>
+                        <div class="bg-gray-100 h-12 rounded flex items-center justify-center text-gray-900 text-xs">100</div>
+                        <div class="bg-gray-200 h-12 rounded flex items-center justify-center text-gray-900 text-xs">200</div>
+                        <div class="bg-gray-300 h-12 rounded flex items-center justify-center text-gray-900 text-xs">300</div>
+                        <div class="bg-gray-400 h-12 rounded flex items-center justify-center text-gray-900 text-xs">400</div>
+                        <div class="bg-gray-500 h-12 rounded flex items-center justify-center text-white text-xs">500</div>
+                        <div class="bg-gray-600 h-12 rounded flex items-center justify-center text-white text-xs">600</div>
+                        <div class="bg-gray-700 h-12 rounded flex items-center justify-center text-white text-xs">700</div>
+                        <div class="bg-gray-800 h-12 rounded flex items-center justify-center text-white text-xs">800</div>
+                        <div class="bg-gray-900 h-12 rounded flex items-center justify-center text-white text-xs">900</div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h3 class="text-lg font-medium mb-2">Blue</h3>
+                        <div class="grid grid-cols-5 gap-1">
+                            <div class="bg-blue-100 h-12 rounded flex items-center justify-center text-blue-900 text-xs">100</div>
+                            <div class="bg-blue-300 h-12 rounded flex items-center justify-center text-blue-900 text-xs">300</div>
+                            <div class="bg-blue-500 h-12 rounded flex items-center justify-center text-white text-xs">500</div>
+                            <div class="bg-blue-700 h-12 rounded flex items-center justify-center text-white text-xs">700</div>
+                            <div class="bg-blue-900 h-12 rounded flex items-center justify-center text-white text-xs">900</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-medium mb-2">Light Blue</h3>
+                        <div class="grid grid-cols-5 gap-1">
+                            <div class="bg-light-blue-100 h-12 rounded flex items-center justify-center text-light-blue-900 text-xs">100</div>
+                            <div class="bg-light-blue-300 h-12 rounded flex items-center justify-center text-light-blue-900 text-xs">300</div>
+                            <div class="bg-light-blue-500 h-12 rounded flex items-center justify-center text-white text-xs">500</div>
+                            <div class="bg-light-blue-700 h-12 rounded flex items-center justify-center text-white text-xs">700</div>
+                            <div class="bg-light-blue-900 h-12 rounded flex items-center justify-center text-white text-xs">900</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h3 class="text-lg font-medium mb-2">Green</h3>
+                        <div class="grid grid-cols-5 gap-1">
+                            <div class="bg-green-100 h-12 rounded flex items-center justify-center text-green-900 text-xs">100</div>
+                            <div class="bg-green-300 h-12 rounded flex items-center justify-center text-green-900 text-xs">300</div>
+                            <div class="bg-green-500 h-12 rounded flex items-center justify-center text-white text-xs">500</div>
+                            <div class="bg-green-700 h-12 rounded flex items-center justify-center text-white text-xs">700</div>
+                            <div class="bg-green-900 h-12 rounded flex items-center justify-center text-white text-xs">900</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-medium mb-2">Teal</h3>
+                        <div class="grid grid-cols-5 gap-1">
+                            <div class="bg-teal-100 h-12 rounded flex items-center justify-center text-teal-900 text-xs">100</div>
+                            <div class="bg-teal-300 h-12 rounded flex items-center justify-center text-teal-900 text-xs">300</div>
+                            <div class="bg-teal-500 h-12 rounded flex items-center justify-center text-white text-xs">500</div>
+                            <div class="bg-teal-700 h-12 rounded flex items-center justify-center text-white text-xs">700</div>
+                            <div class="bg-teal-900 h-12 rounded flex items-center justify-center text-white text-xs">900</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h3 class="text-lg font-medium mb-2">Red</h3>
+                        <div class="grid grid-cols-5 gap-1">
+                            <div class="bg-red-100 h-12 rounded flex items-center justify-center text-red-900 text-xs">100</div>
+                            <div class="bg-red-300 h-12 rounded flex items-center justify-center text-red-900 text-xs">300</div>
+                            <div class="bg-red-500 h-12 rounded flex items-center justify-center text-white text-xs">500</div>
+                            <div class="bg-red-700 h-12 rounded flex items-center justify-center text-white text-xs">700</div>
+                            <div class="bg-red-900 h-12 rounded flex items-center justify-center text-white text-xs">900</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-medium mb-2">Orange</h3>
+                        <div class="grid grid-cols-5 gap-1">
+                            <div class="bg-orange-100 h-12 rounded flex items-center justify-center text-orange-900 text-xs">100</div>
+                            <div class="bg-orange-300 h-12 rounded flex items-center justify-center text-orange-900 text-xs">300</div>
+                            <div class="bg-orange-500 h-12 rounded flex items-center justify-center text-white text-xs">500</div>
+                            <div class="bg-orange-700 h-12 rounded flex items-center justify-center text-white text-xs">700</div>
+                            <div class="bg-orange-900 h-12 rounded flex items-center justify-center text-white text-xs">900</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h3 class="text-lg font-medium mb-2">Purple</h3>
+                        <div class="grid grid-cols-5 gap-1">
+                            <div class="bg-purple-100 h-12 rounded flex items-center justify-center text-purple-900 text-xs">100</div>
+                            <div class="bg-purple-300 h-12 rounded flex items-center justify-center text-purple-900 text-xs">300</div>
+                            <div class="bg-purple-500 h-12 rounded flex items-center justify-center text-white text-xs">500</div>
+                            <div class="bg-purple-700 h-12 rounded flex items-center justify-center text-white text-xs">700</div>
+                            <div class="bg-purple-900 h-12 rounded flex items-center justify-center text-white text-xs">900</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-medium mb-2">Pink</h3>
+                        <div class="grid grid-cols-5 gap-1">
+                            <div class="bg-pink-100 h-12 rounded flex items-center justify-center text-pink-900 text-xs">100</div>
+                            <div class="bg-pink-300 h-12 rounded flex items-center justify-center text-pink-900 text-xs">300</div>
+                            <div class="bg-pink-500 h-12 rounded flex items-center justify-center text-white text-xs">500</div>
+                            <div class="bg-pink-700 h-12 rounded flex items-center justify-center text-white text-xs">700</div>
+                            <div class="bg-pink-900 h-12 rounded flex items-center justify-center text-white text-xs">900</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="mb-12">
             <h2 class="text-2xl font-semibold text-gray-800 mb-4">Buttons</h2>
             <div class="space-x-4">
-                <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded">Primary</button>
-                <button class="bg-gray-600 hover:bg-gray-700 text-white px-6 py-2 rounded">Secondary</button>
-                <button class="border border-gray-400 hover:bg-gray-100 px-6 py-2 rounded">Outline</button>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg">Primary</button>
+                <button class="bg-light-blue-600 hover:bg-light-blue-700 text-white px-6 py-2 rounded-lg">Secondary</button>
+                <button class="bg-teal-600 hover:bg-teal-700 text-white px-6 py-2 rounded-lg">Success</button>
+                <button class="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-lg">Warning</button>
+                <button class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg">Danger</button>
+                <button class="border border-gray-400 text-gray-700 hover:bg-gray-100 px-6 py-2 rounded-lg">Outline</button>
             </div>
         </section>
 
@@ -45,7 +167,7 @@
             <div class="max-w-sm bg-white rounded-lg shadow-md p-6">
                 <h3 class="text-xl font-semibold mb-2">Card Title</h3>
                 <p class="text-gray-600 mb-4">This is a sample card component with some content to demonstrate styling.</p>
-                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Action</button>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">Action</button>
             </div>
         </section>
     </div>

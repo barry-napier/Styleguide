@@ -1,0 +1,134 @@
+@layer base {
+  /* HTML and Body defaults */
+  html {
+    @apply scroll-smooth text-base antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply font-sans text-base text-gray-900 bg-gray-100 min-h-screen m-0 p-0;
+  }
+
+  /* Typography defaults */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold leading-tight text-gray-900 mt-0 mb-4;
+  }
+
+  h1 {
+    @apply text-5xl font-black;
+  }
+
+  h2 {
+    @apply text-4xl font-bold;
+  }
+
+  h3 {
+    @apply text-3xl font-semibold;
+  }
+
+  h4 {
+    @apply text-2xl font-semibold;
+  }
+
+  h5 {
+    @apply text-xl font-medium;
+  }
+
+  h6 {
+    @apply text-lg font-medium;
+  }
+
+  p {
+    @apply mt-0 mb-4 leading-relaxed;
+  }
+
+  /* Link defaults */
+  a {
+    @apply text-blue-600 no-underline transition-colors duration-200 ease-in-out;
+  }
+
+  a:hover {
+    @apply text-blue-700 underline;
+  }
+
+  a:focus {
+    @apply outline outline-2 outline-blue-500 outline-offset-2;
+  }
+
+  /* List defaults */
+  ul, ol {
+    @apply mt-0 mb-4 pl-6;
+  }
+
+  li {
+    @apply mb-2;
+  }
+
+  /* Form element defaults */
+  input, textarea, select, button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+
+  button:disabled {
+    @apply cursor-not-allowed opacity-60;
+  }
+
+  /* Image defaults */
+  img {
+    @apply max-w-full h-auto block;
+  }
+
+  /* Table defaults */
+  table {
+    @apply border-collapse w-full;
+  }
+
+  /* Code defaults */
+  code {
+    @apply font-mono text-sm bg-gray-100 px-2 py-1 rounded-md;
+  }
+
+  pre {
+    @apply font-mono text-sm bg-gray-100 p-4 rounded-lg overflow-x-auto mt-0 mb-4;
+  }
+
+  pre code {
+    @apply bg-transparent p-0;
+  }
+
+  /* Blockquote defaults */
+  blockquote {
+    @apply border-l-4 border-gray-300 pl-4 ml-0 mr-0 mt-4 mb-4 italic text-gray-700;
+  }
+
+  /* HR defaults */
+  hr {
+    @apply border-0 h-px bg-gray-200 mt-8 mb-8;
+  }
+
+  /* Selection styles */
+  ::selection {
+    @apply bg-blue-200 text-gray-900;
+  }
+
+  ::-moz-selection {
+    @apply bg-blue-200 text-gray-900;
+  }
+
+  /* Focus visible for accessibility */
+  :focus-visible {
+    @apply outline outline-2 outline-blue-500 outline-offset-2;
+  }
+
+  /* Remove default focus styles for mouse users */
+  :focus:not(:focus-visible) {
+    @apply outline-none;
+  }
+}
