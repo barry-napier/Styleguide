@@ -398,11 +398,11 @@
 
   /* Blockquote Component */
   .blockquote {
-    @apply border-l-4 border-gray-300 pl-4 italic text-gray-700;
+    @apply border-l-4 border-light-blue-400 pl-4 italic text-light-blue-800;
   }
 
   .blockquote-primary {
-    @apply border-l-4 border-blue-500 pl-4 italic text-gray-700 bg-blue-50 py-4 pr-4;
+    @apply border-l-4 border-light-blue-600 pl-4 italic text-light-blue-900 bg-light-blue-50 py-4 pr-4;
   }
 
   /* ============================================
