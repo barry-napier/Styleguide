@@ -236,7 +236,7 @@
   }
 
   .form-section {
-    @apply p-6 bg-white rounded-lg mb-4;
+    @apply p-0 bg-white rounded-lg mb-4;
   }
 
   /* Form Group */
@@ -645,10 +645,20 @@
     @apply hidden p-6 bg-transparent;
   }
 
+  .tab-content-full {
+    @apply hidden py-6 px-0 bg-transparent;
+  }
+
   /* Tab switching logic using :has() selector - works with new structure */
   .tabs:has(#tab1:checked) .tab-content[data-tab="tab1"],
   .tabs:has(#tab2:checked) .tab-content[data-tab="tab2"],
   .tabs:has(#tab3:checked) .tab-content[data-tab="tab3"] {
+    @apply block;
+  }
+
+  .tabs:has(#tab1:checked) .tab-content-full[data-tab="tab1"],
+  .tabs:has(#tab2:checked) .tab-content-full[data-tab="tab2"],
+  .tabs:has(#tab3:checked) .tab-content-full[data-tab="tab3"] {
     @apply block;
   }
 
