@@ -191,11 +191,14 @@
   --radius-full: 9999px;
 
   /* Custom Shadows */
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --shadow-sm: 0 1px 2px 0 rgba(101, 153, 202, 0.27);
+  --shadow-base: 0 3px 34px 0 rgba(110, 155, 198, 0.04), 0 1px 5px 0 rgba(98, 151, 202, 0.13);
+  --shadow-md: 5px 9px 17px 1px rgba(159, 192, 222, 0.22), 1px 4px 10px 0 rgba(123, 170, 215, 0.10);
+  --shadow-lg: 7px 15px 24px -3px rgba(97, 141, 182, 0.11), 0 4px 6px -2px rgba(115, 160, 201, 0.00);
+  --shadow-xl: 0 20px 25px -5px rgba(220, 234, 243, 0.38), 0 10px 10px -5px rgba(155, 181, 206, 0.28);
+  --shadow-2xl: 0 25px 50px -12px rgba(103, 152, 199, 0.22);
+  --shadow-inner: inset 0 2px 4px 0 rgba(101, 153, 202, 0.15);
+  --shadow-none: 0 0 #0000;
 
   /* Custom Font Family */
   --font-family-sans: "Proxima Nova", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;

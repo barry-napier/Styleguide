@@ -10,25 +10,21 @@
     <!-- Landing Page Layout -->
     <div class="min-h-screen flex flex-col">
         <!-- Navigation -->
-        <nav class="bg-white border-b border-gray-200">
-            <div class="container mx-auto px-4">
-                <div class="flex items-center justify-between h-16">
-                    <div class="flex items-center space-x-8">
-                        <h2 class="text-lg font-bold text-gray-900">ProductName</h2>
-                        <div class="hidden md:flex space-x-6">
-                            <a href="#" class="text-sm font-medium text-gray-600 hover:text-gray-900">Features</a>
-                            <a href="#" class="text-sm font-medium text-gray-600 hover:text-gray-900">Pricing</a>
-                            <a href="#" class="text-sm font-medium text-gray-600 hover:text-gray-900">About</a>
-                            <a href="#" class="text-sm font-medium text-gray-600 hover:text-gray-900">Contact</a>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                        <button class="btn btn-tertiary btn-sm">Sign In</button>
-                        <button class="btn btn-primary btn-sm">Get Started</button>
-                    </div>
-                </div>
+        <header class="header flex items-center justify-between">
+            <div class="flex items-center space-x-8">
+                <h2 class="header-title">ProductName</h2>
+                <nav class="header-nav hidden md:flex">
+                    <a href="#" class="header-nav-item">Features</a>
+                    <a href="#" class="header-nav-item">Pricing</a>
+                    <a href="#" class="header-nav-item">About</a>
+                    <a href="#" class="header-nav-item">Contact</a>
+                </nav>
             </div>
-        </nav>
+            <div class="flex items-center space-x-4">
+                <button class="btn btn-tertiary btn-sm">Sign In</button>
+                <button class="btn btn-primary btn-sm">Get Started</button>
+            </div>
+        </header>
 
         <!-- Hero Section -->
         <section class="bg-white py-20">

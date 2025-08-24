@@ -155,6 +155,41 @@
     @apply absolute left-0 text-light-blue-600;
   }
 
+  /* Header Component */
+  .header {
+    @apply bg-white text-gray-900 shadow-md;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 18px;
+    border: none;
+    border-radius: 0;
+  }
+
+  .header-title {
+    @apply text-gray-900 font-semibold m-0;
+    font-size: 18px;
+  }
+
+  .header h1,
+  .header h2,
+  .header h3,
+  .header h4,
+  .header h5,
+  .header h6 {
+    @apply m-0;
+  }
+
+  .header-nav {
+    @apply flex items-center space-x-6;
+  }
+
+  .header-nav-item {
+    @apply text-gray-900 hover:text-light-blue-700 transition-colors;
+    font-size: 16px;
+  }
+
   /* Card Components */
   .card {
     @apply bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden;
