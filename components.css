@@ -42,16 +42,32 @@
     @apply bg-light-blue-700 text-white hover:bg-light-blue-800 active:bg-light-blue-900;
   }
 
+  .btn-primary:disabled {
+    @apply bg-light-blue-700 hover:bg-light-blue-700 active:bg-light-blue-700;
+  }
+
   .btn-secondary {
     @apply bg-white text-light-blue-800 border border-light-blue-800 hover:bg-gray-200 active:bg-gray-300;
+  }
+
+  .btn-secondary:disabled {
+    @apply bg-white hover:bg-white active:bg-white;
   }
 
   .btn-tertiary {
     @apply bg-gray-300 text-light-blue-800 hover:bg-gray-400 active:bg-gray-500;
   }
 
+  .btn-tertiary:disabled {
+    @apply bg-gray-300 hover:bg-gray-300 active:bg-gray-300;
+  }
+
   .btn-destructive {
     @apply bg-red-600 text-white hover:bg-red-700 active:bg-red-800;
+  }
+
+  .btn-destructive:disabled {
+    @apply bg-red-600 hover:bg-red-600 active:bg-red-600;
   }
 
   .btn-sm {
@@ -60,10 +76,6 @@
 
   .btn-lg {
     @apply px-5 py-2.5 text-lg;
-  }
-
-  .btn-disabled {
-    @apply opacity-50 cursor-not-allowed pointer-events-none;
   }
 
   /* Card Components */
@@ -130,12 +142,12 @@
   }
 
   .alert-info {
-    @apply border-blue-600;
+    @apply border-light-blue-700;
   }
 
   .alert-info .alert-title,
   .alert-info .alert-icon {
-    @apply text-blue-600;
+    @apply text-light-blue-700;
   }
 
   .alert-success {
@@ -462,6 +474,10 @@
     @apply text-sm text-gray-600;
   }
 
+  .alert-close {
+    @apply absolute top-4 right-4 text-gray-400 hover:text-gray-600 cursor-pointer transition-colors duration-200;
+  }
+
   /* Enhanced Badge Component */
   .badge-default {
     @apply bg-gray-900 text-gray-50 hover:bg-gray-800;
@@ -610,7 +626,7 @@
   }
 
   .tabs-list {
-    @apply relative flex items-center w-fit rounded-lg bg-gray-100 p-1 text-gray-500 mb-4;
+    @apply relative flex items-center w-full border-b border-gray-200 bg-white;
   }
 
   .tab-trigger-input {
@@ -618,15 +634,15 @@
   }
 
   .tab-trigger {
-    @apply relative z-10 inline-flex items-center justify-center whitespace-nowrap rounded-md px-4 py-1.5 text-sm font-medium transition-all cursor-pointer hover:text-gray-900;
+    @apply relative inline-flex items-center justify-center whitespace-nowrap px-6 py-4 text-sm font-medium transition-all cursor-pointer text-gray-500 hover:text-gray-700 border-b-2 border-transparent -mb-px;
   }
 
   .tab-trigger-input:checked + .tab-trigger {
-    @apply bg-white text-gray-900 shadow-sm;
+    @apply text-light-blue-700 border-b-2 border-light-blue-700;
   }
 
   .tab-content {
-    @apply hidden;
+    @apply hidden p-6 bg-transparent;
   }
 
   /* Tab switching logic using :has() selector - works with new structure */
