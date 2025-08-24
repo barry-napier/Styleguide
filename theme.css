@@ -205,3 +205,191 @@
   --font-family-display: "Proxima Nova", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-family-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
 }
+
+/* Navigation Components */
+
+@layer components {
+  /* Base Navigation Container */
+  .nav {
+    @apply px-4 pb-6;
+  }
+
+  .nav-vertical {
+    @apply flex flex-col space-y-1;
+  }
+
+  .nav-horizontal {
+    @apply flex flex-row items-center space-x-2;
+  }
+
+  /* Navigation Items */
+  .nav-item {
+    @apply flex items-center px-4 py-2 text-sm font-medium rounded-md transition-colors;
+  }
+
+  /* Default State */
+  .nav-item-default {
+    @apply text-gray-600 hover:text-gray-900 hover:bg-gray-50;
+  }
+
+  /* Active/Selected State */
+  .nav-item-active {
+    @apply text-light-blue-700 bg-light-blue-50;
+  }
+
+  /* Disabled State */
+  .nav-item-disabled {
+    @apply text-gray-400 cursor-not-allowed hover:bg-transparent hover:text-gray-400;
+  }
+
+  /* Size Variants */
+  .nav-item-sm {
+    @apply px-3 py-1.5 text-xs;
+  }
+
+  .nav-item-lg {
+    @apply px-5 py-3 text-base;
+  }
+
+  /* Navigation with Icons */
+  .nav-item-icon {
+    @apply mr-3 h-5 w-5;
+  }
+
+  .nav-item-icon-right {
+    @apply ml-3 h-5 w-5;
+  }
+
+  /* Navigation Groups */
+  .nav-group {
+    @apply mb-6;
+  }
+
+  .nav-group-title {
+    @apply px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider;
+  }
+
+  .nav-group-items {
+    @apply mt-2 space-y-1;
+  }
+
+  /* Sidebar Navigation Container */
+  .sidebar-nav {
+    @apply w-64 bg-white border-r border-gray-200 min-h-screen;
+  }
+
+  .sidebar-nav-header {
+    @apply p-6 border-b border-gray-200;
+  }
+
+  .sidebar-nav-title {
+    @apply text-lg font-semibold text-gray-900;
+  }
+
+  .sidebar-nav-content {
+    @apply px-4 py-6;
+  }
+
+  /* Collapsible Navigation Items */
+  .nav-item-collapsible {
+    @apply relative;
+  }
+
+  .nav-item-collapsible-trigger {
+    @apply flex items-center justify-between w-full;
+  }
+
+  .nav-item-collapsible-icon {
+    @apply h-4 w-4 transition-transform;
+  }
+
+  .nav-item-collapsible-icon-open {
+    @apply rotate-180;
+  }
+
+  .nav-item-collapsible-content {
+    @apply ml-4 mt-2 space-y-1;
+  }
+
+  /* Nested Navigation */
+  .nav-item-nested {
+    @apply pl-8 text-sm;
+  }
+
+  .nav-item-nested-2 {
+    @apply pl-12 text-sm;
+  }
+
+  /* Breadcrumb Navigation (already exists but adding here for completeness) */
+  .nav-breadcrumb {
+    @apply flex items-center space-x-2 text-sm;
+  }
+
+  .nav-breadcrumb-item {
+    @apply text-gray-600 hover:text-gray-900;
+  }
+
+  .nav-breadcrumb-separator {
+    @apply text-gray-400;
+  }
+
+  .nav-breadcrumb-current {
+    @apply text-gray-900 font-medium;
+  }
+
+  /* Pills Navigation */
+  .nav-pills {
+    @apply flex items-center space-x-2 p-1 bg-gray-100 rounded-lg;
+  }
+
+  .nav-pill {
+    @apply px-4 py-2 text-sm font-medium text-gray-600 rounded-md transition-colors;
+  }
+
+  .nav-pill:hover {
+    @apply text-gray-900 bg-gray-50;
+  }
+
+  .nav-pill-active {
+    @apply text-gray-900 bg-white shadow-sm;
+  }
+
+  /* Tabs Navigation (extending existing) */
+  .nav-tabs {
+    @apply flex items-center border-b border-gray-200;
+  }
+
+  .nav-tab {
+    @apply px-4 py-2 text-sm font-medium text-gray-600 border-b-2 border-transparent hover:text-gray-900 hover:border-gray-300 transition-colors;
+  }
+
+  .nav-tab-active {
+    @apply text-light-blue-600 border-light-blue-600;
+  }
+
+  /* Dots/Steps Navigation */
+  .nav-dots {
+    @apply flex items-center space-x-2;
+  }
+
+  .nav-dot {
+    @apply w-2 h-2 bg-gray-300 rounded-full transition-colors cursor-pointer;
+  }
+
+  .nav-dot:hover {
+    @apply bg-gray-400;
+  }
+
+  .nav-dot-active {
+    @apply bg-light-blue-600 w-8;
+  }
+
+  /* Mobile Navigation Toggle */
+  .nav-toggle {
+    @apply p-2 rounded-md hover:bg-gray-100 lg:hidden;
+  }
+
+  .nav-toggle-icon {
+    @apply h-6 w-6 text-gray-600;
+  }
+}

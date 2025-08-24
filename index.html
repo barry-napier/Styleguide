@@ -1216,6 +1216,160 @@ function hello(name) {
             </div>
         </section>
 
+        <!-- Navigation Components -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Navigation Components</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Sidebar Navigation</h3>
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                        <div class="flex">
+                            <aside class="sidebar-nav" style="min-height: auto; width: 16rem;">
+                                <div class="sidebar-nav-header">
+                                    <h2 class="sidebar-nav-title">Dashboard</h2>
+                                </div>
+                                <nav class="sidebar-nav-content">
+                                    <div class="nav nav-vertical">
+                                        <a href="#" class="nav-item nav-item-active">
+                                            <span>Overview</span>
+                                        </a>
+                                        <a href="#" class="nav-item nav-item-default">
+                                            <span>Analytics</span>
+                                        </a>
+                                        <a href="#" class="nav-item nav-item-default">
+                                            <span>Reports</span>
+                                        </a>
+                                        <a href="#" class="nav-item nav-item-default">
+                                            <span>Users</span>
+                                        </a>
+                                        <a href="#" class="nav-item nav-item-disabled">
+                                            <span>Settings</span>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </aside>
+                            <div class="flex-1 p-6 bg-gray-50">
+                                <p class="text-gray-600">Main content area</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Horizontal Navigation</h3>
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <nav class="nav nav-horizontal">
+                            <a href="#" class="nav-item nav-item-active">Home</a>
+                            <a href="#" class="nav-item nav-item-default">Products</a>
+                            <a href="#" class="nav-item nav-item-default">Services</a>
+                            <a href="#" class="nav-item nav-item-default">About</a>
+                            <a href="#" class="nav-item nav-item-disabled">Contact</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Navigation with Groups</h3>
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden" style="width: 16rem;">
+                        <nav class="p-4">
+                            <div class="nav-group">
+                                <div class="nav-group-title">Main</div>
+                                <div class="nav-group-items nav-vertical">
+                                    <a href="#" class="nav-item nav-item-active">Dashboard</a>
+                                    <a href="#" class="nav-item nav-item-default">Projects</a>
+                                    <a href="#" class="nav-item nav-item-default">Tasks</a>
+                                </div>
+                            </div>
+                            <div class="nav-group">
+                                <div class="nav-group-title">Resources</div>
+                                <div class="nav-group-items nav-vertical">
+                                    <a href="#" class="nav-item nav-item-default">Documents</a>
+                                    <a href="#" class="nav-item nav-item-default">Images</a>
+                                    <a href="#" class="nav-item nav-item-default">Videos</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Pills Navigation</h3>
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <nav class="nav-pills">
+                            <button class="nav-pill nav-pill-active">All</button>
+                            <button class="nav-pill">Active</button>
+                            <button class="nav-pill">Pending</button>
+                            <button class="nav-pill">Completed</button>
+                        </nav>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Tabs Navigation</h3>
+                    <div class="bg-white rounded-lg shadow-sm">
+                        <nav class="nav-tabs px-6">
+                            <button class="nav-tab nav-tab-active">Overview</button>
+                            <button class="nav-tab">Analytics</button>
+                            <button class="nav-tab">Reports</button>
+                            <button class="nav-tab">Settings</button>
+                        </nav>
+                        <div class="p-6">
+                            <p class="text-gray-600">Tab content area</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Breadcrumb Navigation</h3>
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <nav class="nav-breadcrumb">
+                            <a href="#" class="nav-breadcrumb-item">Home</a>
+                            <span class="nav-breadcrumb-separator">/</span>
+                            <a href="#" class="nav-breadcrumb-item">Products</a>
+                            <span class="nav-breadcrumb-separator">/</span>
+                            <a href="#" class="nav-breadcrumb-item">Electronics</a>
+                            <span class="nav-breadcrumb-separator">/</span>
+                            <span class="nav-breadcrumb-current">Laptops</span>
+                        </nav>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Dots/Steps Navigation</h3>
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <nav class="nav-dots">
+                            <button class="nav-dot"></button>
+                            <button class="nav-dot nav-dot-active"></button>
+                            <button class="nav-dot"></button>
+                            <button class="nav-dot"></button>
+                            <button class="nav-dot"></button>
+                        </nav>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Navigation Sizes</h3>
+                    <div class="bg-white rounded-lg p-6 shadow-sm space-y-4">
+                        <nav class="nav nav-horizontal">
+                            <a href="#" class="nav-item nav-item-sm nav-item-active">Small</a>
+                            <a href="#" class="nav-item nav-item-sm nav-item-default">Small</a>
+                            <a href="#" class="nav-item nav-item-sm nav-item-default">Small</a>
+                        </nav>
+                        <nav class="nav nav-horizontal">
+                            <a href="#" class="nav-item nav-item-active">Default</a>
+                            <a href="#" class="nav-item nav-item-default">Default</a>
+                            <a href="#" class="nav-item nav-item-default">Default</a>
+                        </nav>
+                        <nav class="nav nav-horizontal">
+                            <a href="#" class="nav-item nav-item-lg nav-item-active">Large</a>
+                            <a href="#" class="nav-item nav-item-lg nav-item-default">Large</a>
+                            <a href="#" class="nav-item nav-item-lg nav-item-default">Large</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Header Component Section -->
         <section class="mb-12">
             <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Header Component</h2>
