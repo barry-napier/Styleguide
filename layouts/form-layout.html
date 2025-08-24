@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Layout</title>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <!-- Form Layout with Navigation -->
+    <div class="min-h-screen flex flex-col">
+        <!-- Navigation -->
+        <nav class="bg-white border-b border-gray-200">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center space-x-8">
+                        <h2 class="text-lg font-bold text-gray-900">AppName</h2>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-sm font-medium text-gray-600 hover:text-gray-900">Home</a>
+                            <a href="#" class="text-sm font-medium text-light-blue-700">Forms</a>
+                            <a href="#" class="text-sm font-medium text-gray-600 hover:text-gray-900">Reports</a>
+                            <a href="#" class="text-sm font-medium text-gray-600 hover:text-gray-900">Settings</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <button class="text-gray-600 hover:text-gray-900">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
+                            </svg>
+                        </button>
+                        <div class="avatar avatar-sm">
+                            <div class="avatar-fallback">JD</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="flex-1 container mx-auto px-4 py-8">
+            <div class="max-w-2xl mx-auto">
+                <!-- Page Header -->
+                <div class="mb-8">
+                    <h1 class="text-2xl font-bold text-gray-800 mb-2">Create New Project</h1>
+                    <p class="text-gray-600">Fill in the information below to create a new project.</p>
+                </div>
+
+                <!-- Form -->
+                <form class="space-y-6">
+                    <!-- Basic Information Section -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Basic Information</h3>
+                            <p class="card-description">Provide the basic details for your project.</p>
+                        </div>
+                        <div class="card-content space-y-4">
+                            <div>
+                                <label class="label label-required">Project Name</label>
+                                <input type="text" class="input" placeholder="Enter project name">
+                            </div>
+                            
+                            <div>
+                                <label class="label">Description</label>
+                                <textarea class="textarea" rows="4" placeholder="Describe your project..."></textarea>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="label label-required">Start Date</label>
+                                    <input type="date" class="input">
+                                </div>
+                                <div>
+                                    <label class="label">End Date</label>
+                                    <input type="date" class="input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Section -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Team Members</h3>
+                            <p class="card-description">Add team members to this project.</p>
+                        </div>
+                        <div class="card-content space-y-4">
+                            <div>
+                                <label class="label">Project Lead</label>
+                                <select class="select">
+                                    <option>Select a team lead</option>
+                                    <option>John Doe</option>
+                                    <option>Jane Smith</option>
+                                    <option>Bob Johnson</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="label">Team Members</label>
+                                <div class="space-y-2">
+                                    <div class="checkbox-wrapper">
+                                        <input type="checkbox" id="member1" class="checkbox">
+                                        <label for="member1" class="checkbox-label">Alice Williams</label>
+                                    </div>
+                                    <div class="checkbox-wrapper">
+                                        <input type="checkbox" id="member2" class="checkbox">
+                                        <label for="member2" class="checkbox-label">Charlie Brown</label>
+                                    </div>
+                                    <div class="checkbox-wrapper">
+                                        <input type="checkbox" id="member3" class="checkbox">
+                                        <label for="member3" class="checkbox-label">Diana Prince</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Settings Section -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Project Settings</h3>
+                            <p class="card-description">Configure project settings and preferences.</p>
+                        </div>
+                        <div class="card-content space-y-4">
+                            <div>
+                                <label class="label">Priority</label>
+                                <div class="radio-group">
+                                    <div class="radio-wrapper">
+                                        <input type="radio" id="low" name="priority" class="radio">
+                                        <label for="low" class="radio-label">
+                                            <span class="font-medium">Low</span>
+                                            <span class="text-sm text-gray-500">Standard timeline</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio-wrapper">
+                                        <input type="radio" id="medium" name="priority" class="radio" checked>
+                                        <label for="medium" class="radio-label">
+                                            <span class="font-medium">Medium</span>
+                                            <span class="text-sm text-gray-500">Important project</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio-wrapper">
+                                        <input type="radio" id="high" name="priority" class="radio">
+                                        <label for="high" class="radio-label">
+                                            <span class="font-medium">High</span>
+                                            <span class="text-sm text-gray-500">Urgent delivery</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <div class="switch-wrapper">
+                                    <input type="checkbox" id="notifications" class="switch">
+                                    <label for="notifications" class="switch-slider"></label>
+                                    <label for="notifications" class="switch-label">Email notifications</label>
+                                </div>
+                                <div class="switch-wrapper">
+                                    <input type="checkbox" id="public" class="switch">
+                                    <label for="public" class="switch-slider"></label>
+                                    <label for="public" class="switch-label">Make project public</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Actions -->
+                    <div class="flex items-center justify-between pt-6">
+                        <button type="button" class="btn btn-tertiary">Cancel</button>
+                        <div class="flex items-center space-x-4">
+                            <button type="button" class="btn btn-secondary">Save as Draft</button>
+                            <button type="submit" class="btn btn-primary">Create Project</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

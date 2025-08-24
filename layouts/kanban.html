@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board Layout</title>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <!-- Kanban Board Layout -->
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="bg-white border-b border-gray-200">
+            <div class="px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-800">Project Tasks</h1>
+                        <p class="text-sm text-gray-600">Manage and track your project progress</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <input type="text" class="input input-sm" placeholder="Search tasks...">
+                        <button class="btn btn-primary btn-sm">Add Task</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Kanban Board -->
+        <main class="flex-1 p-6 overflow-x-auto">
+            <div class="flex space-x-6 h-full">
+                <!-- To Do Column -->
+                <div class="flex-shrink-0 w-80">
+                    <div class="bg-white rounded-lg border border-gray-200 h-full flex flex-col">
+                        <div class="px-4 py-3 border-b border-gray-200">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-semibold text-gray-900">To Do</h3>
+                                <span class="badge badge-secondary">5</span>
+                            </div>
+                        </div>
+                        <div class="flex-1 p-4 space-y-3 overflow-y-auto">
+                            <!-- Task Card -->
+                            <div class="card card-compact">
+                                <div class="card-body">
+                                    <h4 class="font-medium text-gray-900">Design new landing page</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Create mockups for the new marketing landing page</p>
+                                    <div class="flex items-center justify-between mt-3">
+                                        <div class="flex items-center space-x-2">
+                                            <span class="badge badge-info">Design</span>
+                                            <span class="badge badge-warning">High</span>
+                                        </div>
+                                        <div class="avatar avatar-xs">
+                                            <div class="avatar-fallback">JD</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card card-compact">
+                                <div class="card-body">
+                                    <h4 class="font-medium text-gray-900">Update documentation</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Review and update API documentation</p>
+                                    <div class="flex items-center justify-between mt-3">
+                                        <span class="badge badge-secondary">Docs</span>
+                                        <div class="avatar avatar-xs">
+                                            <div class="avatar-fallback">AB</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card card-compact">
+                                <div class="card-body">
+                                    <h4 class="font-medium text-gray-900">Fix navigation bug</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Users report issues with mobile navigation menu</p>
+                                    <div class="flex items-center justify-between mt-3">
+                                        <span class="badge badge-danger">Bug</span>
+                                        <div class="avatar avatar-xs">
+                                            <div class="avatar-fallback">CD</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- In Progress Column -->
+                <div class="flex-shrink-0 w-80">
+                    <div class="bg-white rounded-lg border border-gray-200 h-full flex flex-col">
+                        <div class="px-4 py-3 border-b border-gray-200">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-semibold text-gray-900">In Progress</h3>
+                                <span class="badge badge-primary">3</span>
+                            </div>
+                        </div>
+                        <div class="flex-1 p-4 space-y-3 overflow-y-auto">
+                            <div class="card card-compact">
+                                <div class="card-body">
+                                    <h4 class="font-medium text-gray-900">Implement user authentication</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Add OAuth2 integration for Google and GitHub</p>
+                                    <div class="flex items-center justify-between mt-3">
+                                        <span class="badge badge-primary">Feature</span>
+                                        <div class="avatar avatar-xs">
+                                            <div class="avatar-fallback">EF</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card card-compact">
+                                <div class="card-body">
+                                    <h4 class="font-medium text-gray-900">Database optimization</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Improve query performance for reports</p>
+                                    <div class="flex items-center justify-between mt-3">
+                                        <span class="badge badge-secondary">Backend</span>
+                                        <div class="avatar avatar-xs">
+                                            <div class="avatar-fallback">GH</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Column -->
+                <div class="flex-shrink-0 w-80">
+                    <div class="bg-white rounded-lg border border-gray-200 h-full flex flex-col">
+                        <div class="px-4 py-3 border-b border-gray-200">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-semibold text-gray-900">Review</h3>
+                                <span class="badge badge-warning">2</span>
+                            </div>
+                        </div>
+                        <div class="flex-1 p-4 space-y-3 overflow-y-auto">
+                            <div class="card card-compact">
+                                <div class="card-body">
+                                    <h4 class="font-medium text-gray-900">New dashboard UI</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Review the updated dashboard design</p>
+                                    <div class="flex items-center justify-between mt-3">
+                                        <span class="badge badge-info">Design</span>
+                                        <div class="avatar avatar-xs">
+                                            <div class="avatar-fallback">IJ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card card-compact">
+                                <div class="card-body">
+                                    <h4 class="font-medium text-gray-900">Email notification system</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Test email templates and delivery</p>
+                                    <div class="flex items-center justify-between mt-3">
+                                        <span class="badge badge-primary">Feature</span>
+                                        <div class="avatar avatar-xs">
+                                            <div class="avatar-fallback">KL</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Done Column -->
+                <div class="flex-shrink-0 w-80">
+                    <div class="bg-white rounded-lg border border-gray-200 h-full flex flex-col">
+                        <div class="px-4 py-3 border-b border-gray-200">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-semibold text-gray-900">Done</h3>
+                                <span class="badge badge-success">8</span>
+                            </div>
+                        </div>
+                        <div class="flex-1 p-4 space-y-3 overflow-y-auto">
+                            <div class="card card-compact">
+                                <div class="card-body">
+                                    <h4 class="font-medium text-gray-900">Setup CI/CD pipeline</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Automated testing and deployment configured</p>
+                                    <div class="flex items-center justify-between mt-3">
+                                        <span class="badge badge-secondary">DevOps</span>
+                                        <div class="avatar avatar-xs">
+                                            <div class="avatar-fallback">MN</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card card-compact">
+                                <div class="card-body">
+                                    <h4 class="font-medium text-gray-900">User profile page</h4>
+                                    <p class="text-sm text-gray-600 mt-1">Completed user profile with edit functionality</p>
+                                    <div class="flex items-center justify-between mt-3">
+                                        <span class="badge badge-primary">Feature</span>
+                                        <div class="avatar avatar-xs">
+                                            <div class="avatar-fallback">OP</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
