@@ -48,17 +48,20 @@ This styleguide provides a modern, accessible, and highly customizable design sy
 ### Setup
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/barry-napier/Styleguide.git
    cd Styleguide
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start development server**
+
    ```bash
    npm run dev
    ```
@@ -75,18 +78,18 @@ This styleguide provides a modern, accessible, and highly customizable design sy
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My App</title>
-    <link rel="stylesheet" href="/app.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/app.css" />
+  </head>
+  <body>
     <!-- Your content here -->
     <button class="btn btn-primary">
-        <span class="btn-text">Get Started</span>
+      <span class="btn-text">Get Started</span>
     </button>
-</body>
+  </body>
 </html>
 ```
 
@@ -94,14 +97,14 @@ This styleguide provides a modern, accessible, and highly customizable design sy
 
 ```javascript
 // In your main App.js or _app.js
-import './app.css'
+import "./app.css";
 
 function MyApp() {
   return (
     <button className="btn btn-primary">
       <span className="btn-text">Get Started</span>
     </button>
-  )
+  );
 }
 ```
 
@@ -154,6 +157,7 @@ Styleguide/
 Our component library is organized into logical categories for easy discovery and use:
 
 #### **Typography & Content**
+
 - **Headings** - H1-H6 with consistent sizing and weight
 - **Body Text** - Paragraphs with various sizes and weights
 - **Links** - Standard, bold, no-underline, and external link variants
@@ -162,12 +166,14 @@ Our component library is organized into logical categories for easy discovery an
 - **Blockquotes** - Standard and primary styled quotes
 
 #### **Buttons & Actions**
+
 - **Button Variants** - Primary, Secondary, Tertiary, Destructive
 - **Button Sizes** - Small (sm), Default, Large (lg)
 - **Button States** - Default, Hover, Active, Focus, Disabled
 - **Icon Buttons** - With leading/trailing icons or icon-only
 
 #### **Forms & Inputs**
+
 - **Text Inputs** - Default, error, success states with sizes
 - **Select Dropdowns** - Custom styled with arrow indicator
 - **Textareas** - Resizable with consistent styling
@@ -178,6 +184,7 @@ Our component library is organized into logical categories for easy discovery an
 - **Form Groups** - Container patterns for form layouts
 
 #### **Layout & Structure**
+
 - **Cards** - Standard, compact, hover effects
 - **Headers** - Application headers with navigation
 - **Modals** - Dialog boxes with overlays
@@ -186,6 +193,7 @@ Our component library is organized into logical categories for easy discovery an
 - **Separators** - Horizontal and vertical dividers
 
 #### **Feedback & Status**
+
 - **Alerts** - Info, Success, Warning, Error, Destructive
 - **Badges** - Various colors and sizes for status indicators
 - **Progress Bars** - With color variants for different states
@@ -194,16 +202,19 @@ Our component library is organized into logical categories for easy discovery an
 - **Tooltips** - Contextual help in all directions
 
 #### **Navigation**
+
 - **Breadcrumbs** - Hierarchical navigation
 - **Dropdowns** - Menu dropdowns with items
 - **Tabs** - Content switching navigation
 
 #### **Data Display**
+
 - **Tables** - Responsive tables with hover states
 - **Chips/Tags** - Removable tags for categorization
 - **Avatars** - User avatars in various sizes with fallbacks
 
 #### **Interactive**
+
 - **Collapsibles** - Show/hide content sections
 - **Dialogs** - Modal dialogs with checkbox hack
 - **Tooltips** - Hover tooltips in all positions
@@ -259,18 +270,21 @@ Combined:           .component-subpart-modifier
 The design system includes a comprehensive color palette with custom light-blue accent colors:
 
 #### Primary Colors
+
 - **Light Blue** (Primary Accent)
   - `light-blue-50` to `light-blue-950`
   - Primary: `light-blue-700` (#0070a9)
   - Hover: `light-blue-800` (#075a83)
 
 #### Semantic Colors
+
 - **Success** - Green shades for positive feedback
 - **Warning** - Orange/Yellow for cautions
 - **Error/Danger** - Red shades for errors
 - **Info** - Blue shades for information
 
 #### Neutral Colors
+
 - **Gray Scale** - Custom gray palette from 50-950
   - Background: `gray-100`
   - Text: `gray-900`
@@ -279,12 +293,22 @@ The design system includes a comprehensive color palette with custom light-blue 
 ### Typography System
 
 #### Font Stack
+
 ```css
-font-family: "Proxima Nova", system-ui, -apple-system, BlinkMacSystemFont, 
-             "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+font-family:
+  "Proxima Nova",
+  system-ui,
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  sans-serif;
 ```
 
 #### Font Weights
+
 - **100** - Thin
 - **300** - Light
 - **400** - Regular
@@ -295,6 +319,7 @@ font-family: "Proxima Nova", system-ui, -apple-system, BlinkMacSystemFont,
 - **900** - Black
 
 #### Type Scale
+
 - **xs** - 0.75rem (12px)
 - **sm** - 0.875rem (14px)
 - **base** - 1rem (16px)
@@ -361,6 +386,7 @@ npm run build
 ```
 
 This creates an optimized build in the `dist/` directory with:
+
 - Minified CSS
 - Optimized assets
 - Tree-shaken unused styles
@@ -374,14 +400,12 @@ The project uses Vite with the Tailwind CSS plugin:
 
 ```javascript
 // vite.config.js
-import { defineConfig } from 'vite'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from "vite";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  plugins: [
-    tailwindcss(),
-  ],
-})
+  plugins: [tailwindcss()],
+});
 ```
 
 ### Tailwind CSS 4 Configuration
@@ -411,24 +435,28 @@ Note: Tailwind CSS 4 uses CSS-based configuration, not a traditional config file
 The project includes four production-ready layout examples:
 
 ### 1. Dashboard Layout (`/layouts/dashboard.html`)
+
 - Admin dashboard with sidebar navigation
 - Stats cards and data visualization areas
 - Responsive grid layout
 - User profile section
 
 ### 2. Form Layout (`/layouts/form-layout.html`)
+
 - Multi-step form interface
 - Form validation examples
 - Various input types showcase
 - Submit and cancel actions
 
 ### 3. Kanban Board (`/layouts/kanban.html`)
+
 - Drag-and-drop card interface
 - Column-based task organization
 - Card states and priorities
 - Team collaboration features
 
 ### 4. Landing Page (`/layouts/landing.html`)
+
 - Marketing page layout
 - Hero section with CTA
 - Feature highlights
@@ -438,6 +466,7 @@ The project includes four production-ready layout examples:
 ### Interactive Viewport Testing
 
 The main `index.html` includes an interactive viewport tester:
+
 - Switch between Mobile, Tablet, Desktop, and Full HD views
 - Custom viewport dimensions
 - Live preview of responsive behavior
@@ -448,22 +477,24 @@ The main `index.html` includes an interactive viewport tester:
 ### Component Usage
 
 1. **Semantic HTML First**
+
    ```html
    <!-- Good -->
    <button class="btn btn-primary">Submit</button>
-   
+
    <!-- Avoid -->
    <div class="btn btn-primary">Submit</div>
    ```
 
 2. **Consistent Naming**
+
    ```html
    <!-- Good -->
    <div class="card">
      <div class="card-header">Title</div>
      <div class="card-body">Content</div>
    </div>
-   
+
    <!-- Avoid -->
    <div class="card">
      <div class="header">Title</div>
@@ -472,39 +503,43 @@ The main `index.html` includes an interactive viewport tester:
    ```
 
 3. **Accessibility**
+
    ```html
    <!-- Good -->
    <button class="btn btn-primary" aria-label="Save document">
      <svg class="btn-icon">...</svg>
    </button>
-   
+
    <!-- Good -->
-   <input class="input" aria-invalid="true" aria-describedby="error-msg">
+   <input class="input" aria-invalid="true" aria-describedby="error-msg" />
    <span id="error-msg" class="text-red-600">Required field</span>
    ```
 
 4. **State Management**
+
    ```html
    <!-- Loading State -->
    <button class="btn btn-primary" disabled>
      <span class="spinner spinner-sm"></span>
      <span class="btn-text">Loading...</span>
    </button>
-   
+
    <!-- Error State -->
-   <input class="input input-error" aria-invalid="true">
+   <input class="input input-error" aria-invalid="true" />
    ```
 
 ### Performance Optimization
 
 1. **Use Production Build**
+
    ```bash
    npm run build
    ```
 
 2. **Lazy Load Images**
+
    ```html
-   <img src="hero.jpg" loading="lazy" alt="Hero image">
+   <img src="hero.jpg" loading="lazy" alt="Hero image" />
    ```
 
 3. **Minimize Custom CSS**
@@ -515,6 +550,7 @@ The main `index.html` includes an interactive viewport tester:
 ### Customization
 
 1. **Extending Colors**
+
    ```css
    @theme {
      --color-brand-500: #your-color;
@@ -522,10 +558,11 @@ The main `index.html` includes an interactive viewport tester:
    ```
 
 2. **Adding Components**
+
    ```css
    @layer components {
      .btn-brand {
-       @apply bg-brand-500 text-white hover:bg-brand-600;
+       @apply bg-brand-500 hover:bg-brand-600 text-white;
      }
    }
    ```
@@ -547,6 +584,7 @@ The main `index.html` includes an interactive viewport tester:
 - Chrome for Android (last version)
 
 ### Required Features
+
 - CSS Grid
 - CSS Custom Properties
 - CSS `:has()` selector (for tabs - limited support in older browsers)
@@ -560,6 +598,7 @@ We welcome contributions! Please follow these guidelines:
 
 1. **Fork the repository**
 2. **Create a feature branch**
+
    ```bash
    git checkout -b feature/your-feature-name
    ```
@@ -570,6 +609,7 @@ We welcome contributions! Please follow these guidelines:
    - Test across browsers
 
 4. **Commit with descriptive message**
+
    ```bash
    git commit -m "Add: New tooltip component with animations"
    ```
@@ -589,6 +629,7 @@ We welcome contributions! Please follow these guidelines:
 ### Component Checklist
 
 When adding new components:
+
 - [ ] Follows naming convention
 - [ ] Includes all necessary variants
 - [ ] Has hover/focus/active states

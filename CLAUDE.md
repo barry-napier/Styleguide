@@ -25,6 +25,7 @@ npx prettier --write .
 ## Architecture
 
 ### File Structure
+
 - **app.css**: Main entry point that imports all stylesheets
 - **theme.css**: Custom color palette and theme variables
 - **base.css**: Base HTML element styles (typography, headings, etc.)
@@ -45,6 +46,7 @@ The project follows a semantic naming pattern:
 4. **Combinations**: `.component-subpart-modifier`
 
 ### Technology Stack
+
 - **Tailwind CSS 4**: Using `@tailwindcss/vite` plugin with the new CSS-first config approach
 - **Vite**: Build tool and dev server
 - **Prettier**: Code formatting with Tailwind CSS plugin for class sorting
@@ -59,6 +61,7 @@ The project follows a semantic naming pattern:
 ### Component Categories
 
 The styleguide includes these component types:
+
 - Typography (headings, body text, code blocks)
 - Buttons (primary, secondary, tertiary, destructive)
 - Cards (with header, content, footer sections)

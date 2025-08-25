@@ -1,1529 +1,2800 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Complete Styleguide - Tailwind CSS 4 Components</title>
-    <link rel="stylesheet" href="/app.css">
-</head>
-<body class="min-h-screen bg-gray-100">
+    <link rel="stylesheet" href="/app.css" />
+  </head>
+  <body class="min-h-screen bg-gray-100">
     <div class="container mx-auto px-4 py-12">
-        <h1>Complete Styleguide</h1>
-        <p class="text-lg text-gray-600 mb-12">A comprehensive component library built with Tailwind CSS 4 and semantic naming conventions</p>
-        
-        <!-- Typography Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Typography</h2>
-            <div class="space-y-6">
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Font Weights</h3>
-                    <div class="bg-white rounded-lg p-6 shadow-sm">
-                        <p class="font-thin text-lg">Proxima Nova Thin (100)</p>
-                        <p class="font-light text-lg">Proxima Nova Light (300)</p>
-                        <p class="font-normal text-lg">Proxima Nova Regular (400)</p>
-                        <p class="font-semibold text-lg">Proxima Nova Semibold (600)</p>
-                        <p class="font-bold text-lg">Proxima Nova Bold (700)</p>
-                        <p class="font-extrabold text-lg">Proxima Nova Extra Bold (800)</p>
-                        <p class="font-black text-lg">Proxima Nova Black (900)</p>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Headings</h3>
-                    <div class="bg-white rounded-lg p-6 shadow-sm space-y-2">
-                        <h1>Heading 1</h1>
-                        <h2>Heading 2</h2>
-                        <h3>Heading 3</h3>
-                        <h4>Heading 4</h4>
-                        <h5>Heading 5</h5>
-                        <h6>Heading 6</h6>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Body Text</h3>
-                    <div class="bg-white rounded-lg p-6 shadow-sm">
-                        <p class="text-base text-gray-700 mb-2">This is a paragraph with regular text using Proxima Nova font family.</p>
-                        <p class="text-sm text-gray-600 mb-2">This is small text with lighter weight.</p>
-                        <p class="text-xs text-gray-500">This is extra small text for captions and labels.</p>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Code</h3>
-                    <div class="bg-white rounded-lg p-6 shadow-sm space-y-4">
-                        <p>Inline code: <code class="code-inline">const variable = "value";</code> in a sentence.</p>
-                        <pre class="code-block">// Code block example
+      <h1>Complete Styleguide</h1>
+      <p class="mb-12 text-lg text-gray-600">
+        A comprehensive component library built with Tailwind CSS 4 and semantic
+        naming conventions
+      </p>
+
+      <!-- Typography Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Typography
+        </h2>
+        <div class="space-y-6">
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">
+              Font Weights
+            </h3>
+            <div class="rounded-lg bg-white p-6 shadow-sm">
+              <p class="text-lg font-thin">Proxima Nova Thin (100)</p>
+              <p class="text-lg font-light">Proxima Nova Light (300)</p>
+              <p class="text-lg font-normal">Proxima Nova Regular (400)</p>
+              <p class="text-lg font-semibold">Proxima Nova Semibold (600)</p>
+              <p class="text-lg font-bold">Proxima Nova Bold (700)</p>
+              <p class="text-lg font-extrabold">
+                Proxima Nova Extra Bold (800)
+              </p>
+              <p class="text-lg font-black">Proxima Nova Black (900)</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Headings</h3>
+            <div class="space-y-2 rounded-lg bg-white p-6 shadow-sm">
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <h4>Heading 4</h4>
+              <h5>Heading 5</h5>
+              <h6>Heading 6</h6>
+            </div>
+          </div>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Body Text</h3>
+            <div class="rounded-lg bg-white p-6 shadow-sm">
+              <p class="mb-2 text-base text-gray-700">
+                This is a paragraph with regular text using Proxima Nova font
+                family.
+              </p>
+              <p class="mb-2 text-sm text-gray-600">
+                This is small text with lighter weight.
+              </p>
+              <p class="text-xs text-gray-500">
+                This is extra small text for captions and labels.
+              </p>
+            </div>
+          </div>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Code</h3>
+            <div class="space-y-4 rounded-lg bg-white p-6 shadow-sm">
+              <p>
+                Inline code:
+                <code class="code-inline">const variable = "value";</code> in a
+                sentence.
+              </p>
+              <pre class="code-block">
+// Code block example
 function hello(name) {
   return `Hello, ${name}!`;
-}</pre>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Blockquote</h3>
-                    <div class="bg-white rounded-lg p-6 shadow-sm space-y-4">
-                        <blockquote class="blockquote">
-                            This is a standard blockquote with default styling.
-                        </blockquote>
-                        <blockquote class="blockquote-primary">
-                            This is a primary blockquote with enhanced styling and background.
-                        </blockquote>
-                    </div>
-                </div>
+}</pre
+              >
             </div>
-        </section>
-
-        <!-- Links Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Links</h2>
-            <div class="space-y-6">
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Basic Links</h3>
-                    <div class="flex flex-wrap gap-6">
-                        <a href="#" class="link">Default Link</a>
-                        <a href="#" class="link-no-underline">Link without underline</a>
-                        <a href="#" class="link-bold">Bold Link</a>
-                        <a href="#" class="link link-external">External Link</a>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Links in Context</h3>
-                    <p class="text-gray-600">
-                        This is a paragraph with an <a href="#" class="link">inline link</a> that demonstrates how links appear within text content. 
-                        You can also have <a href="#" class="link-bold">bold links</a> for emphasis or 
-                        <a href="#" class="link link-external">external links</a> that open in new tabs.
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Link List</h3>
-                    <ul class="list-disc">
-                        <li><a href="#" class="link">Documentation</a></li>
-                        <li><a href="#" class="link">API Reference</a></li>
-                        <li><a href="#" class="link">Support Center</a></li>
-                        <li><a href="#" class="link link-external">GitHub Repository</a></li>
-                    </ul>
-                </div>
+          </div>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Blockquote</h3>
+            <div class="space-y-4 rounded-lg bg-white p-6 shadow-sm">
+              <blockquote class="blockquote">
+                This is a standard blockquote with default styling.
+              </blockquote>
+              <blockquote class="blockquote-primary">
+                This is a primary blockquote with enhanced styling and
+                background.
+              </blockquote>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Color Palette Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Color Palette</h2>
-            <div class="space-y-8">
-                <!-- Gray Scale -->
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Gray</h3>
-                    <div class="grid grid-cols-11 gap-1">
-                        <div class="bg-gray-50 h-16 rounded flex items-center justify-center text-gray-900 text-xs font-medium">50</div>
-                        <div class="bg-gray-100 h-16 rounded flex items-center justify-center text-gray-900 text-xs font-medium">100</div>
-                        <div class="bg-gray-200 h-16 rounded flex items-center justify-center text-gray-900 text-xs font-medium">200</div>
-                        <div class="bg-gray-300 h-16 rounded flex items-center justify-center text-gray-900 text-xs font-medium">300</div>
-                        <div class="bg-gray-400 h-16 rounded flex items-center justify-center text-gray-900 text-xs font-medium">400</div>
-                        <div class="bg-gray-500 h-16 rounded flex items-center justify-center text-white text-xs font-medium">500</div>
-                        <div class="bg-gray-600 h-16 rounded flex items-center justify-center text-white text-xs font-medium">600</div>
-                        <div class="bg-gray-700 h-16 rounded flex items-center justify-center text-white text-xs font-medium">700</div>
-                        <div class="bg-gray-800 h-16 rounded flex items-center justify-center text-white text-xs font-medium">800</div>
-                        <div class="bg-gray-900 h-16 rounded flex items-center justify-center text-white text-xs font-medium">900</div>
-                        <div class="bg-gray-950 h-16 rounded flex items-center justify-center text-white text-xs font-medium">950</div>
-                    </div>
-                </div>
-                
-                <!-- Blue -->
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Blue</h3>
-                    <div class="grid grid-cols-11 gap-1">
-                        <div class="bg-blue-50 h-16 rounded flex items-center justify-center text-blue-900 text-xs font-medium">50</div>
-                        <div class="bg-blue-100 h-16 rounded flex items-center justify-center text-blue-900 text-xs font-medium">100</div>
-                        <div class="bg-blue-200 h-16 rounded flex items-center justify-center text-blue-900 text-xs font-medium">200</div>
-                        <div class="bg-blue-300 h-16 rounded flex items-center justify-center text-blue-900 text-xs font-medium">300</div>
-                        <div class="bg-blue-400 h-16 rounded flex items-center justify-center text-blue-900 text-xs font-medium">400</div>
-                        <div class="bg-blue-500 h-16 rounded flex items-center justify-center text-white text-xs font-medium">500</div>
-                        <div class="bg-blue-600 h-16 rounded flex items-center justify-center text-white text-xs font-medium">600</div>
-                        <div class="bg-blue-700 h-16 rounded flex items-center justify-center text-white text-xs font-medium">700</div>
-                        <div class="bg-blue-800 h-16 rounded flex items-center justify-center text-white text-xs font-medium">800</div>
-                        <div class="bg-blue-900 h-16 rounded flex items-center justify-center text-white text-xs font-medium">900</div>
-                        <div class="bg-blue-950 h-16 rounded flex items-center justify-center text-white text-xs font-medium">950</div>
-                    </div>
-                </div>
-                
-                <!-- Light Blue -->
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Light Blue</h3>
-                    <div class="grid grid-cols-11 gap-1">
-                        <div class="bg-light-blue-50 h-16 rounded flex items-center justify-center text-light-blue-900 text-xs font-medium">50</div>
-                        <div class="bg-light-blue-100 h-16 rounded flex items-center justify-center text-light-blue-900 text-xs font-medium">100</div>
-                        <div class="bg-light-blue-200 h-16 rounded flex items-center justify-center text-light-blue-900 text-xs font-medium">200</div>
-                        <div class="bg-light-blue-300 h-16 rounded flex items-center justify-center text-light-blue-900 text-xs font-medium">300</div>
-                        <div class="bg-light-blue-400 h-16 rounded flex items-center justify-center text-light-blue-900 text-xs font-medium">400</div>
-                        <div class="bg-light-blue-500 h-16 rounded flex items-center justify-center text-white text-xs font-medium">500</div>
-                        <div class="bg-light-blue-600 h-16 rounded flex items-center justify-center text-white text-xs font-medium">600</div>
-                        <div class="bg-light-blue-700 h-16 rounded flex items-center justify-center text-white text-xs font-medium">700</div>
-                        <div class="bg-light-blue-800 h-16 rounded flex items-center justify-center text-white text-xs font-medium">800</div>
-                        <div class="bg-light-blue-900 h-16 rounded flex items-center justify-center text-white text-xs font-medium">900</div>
-                        <div class="bg-light-blue-950 h-16 rounded flex items-center justify-center text-white text-xs font-medium">950</div>
-                    </div>
-                </div>
-                
-                <!-- Green -->
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Green</h3>
-                    <div class="grid grid-cols-11 gap-1">
-                        <div class="bg-green-50 h-16 rounded flex items-center justify-center text-green-900 text-xs font-medium">50</div>
-                        <div class="bg-green-100 h-16 rounded flex items-center justify-center text-green-900 text-xs font-medium">100</div>
-                        <div class="bg-green-200 h-16 rounded flex items-center justify-center text-green-900 text-xs font-medium">200</div>
-                        <div class="bg-green-300 h-16 rounded flex items-center justify-center text-green-900 text-xs font-medium">300</div>
-                        <div class="bg-green-400 h-16 rounded flex items-center justify-center text-green-900 text-xs font-medium">400</div>
-                        <div class="bg-green-500 h-16 rounded flex items-center justify-center text-white text-xs font-medium">500</div>
-                        <div class="bg-green-600 h-16 rounded flex items-center justify-center text-white text-xs font-medium">600</div>
-                        <div class="bg-green-700 h-16 rounded flex items-center justify-center text-white text-xs font-medium">700</div>
-                        <div class="bg-green-800 h-16 rounded flex items-center justify-center text-white text-xs font-medium">800</div>
-                        <div class="bg-green-900 h-16 rounded flex items-center justify-center text-white text-xs font-medium">900</div>
-                        <div class="bg-green-950 h-16 rounded flex items-center justify-center text-white text-xs font-medium">950</div>
-                    </div>
-                </div>
-                
-                <!-- Teal -->
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Teal</h3>
-                    <div class="grid grid-cols-11 gap-1">
-                        <div class="bg-teal-50 h-16 rounded flex items-center justify-center text-teal-900 text-xs font-medium">50</div>
-                        <div class="bg-teal-100 h-16 rounded flex items-center justify-center text-teal-900 text-xs font-medium">100</div>
-                        <div class="bg-teal-200 h-16 rounded flex items-center justify-center text-teal-900 text-xs font-medium">200</div>
-                        <div class="bg-teal-300 h-16 rounded flex items-center justify-center text-teal-900 text-xs font-medium">300</div>
-                        <div class="bg-teal-400 h-16 rounded flex items-center justify-center text-teal-900 text-xs font-medium">400</div>
-                        <div class="bg-teal-500 h-16 rounded flex items-center justify-center text-white text-xs font-medium">500</div>
-                        <div class="bg-teal-600 h-16 rounded flex items-center justify-center text-white text-xs font-medium">600</div>
-                        <div class="bg-teal-700 h-16 rounded flex items-center justify-center text-white text-xs font-medium">700</div>
-                        <div class="bg-teal-800 h-16 rounded flex items-center justify-center text-white text-xs font-medium">800</div>
-                        <div class="bg-teal-900 h-16 rounded flex items-center justify-center text-white text-xs font-medium">900</div>
-                        <div class="bg-teal-950 h-16 rounded flex items-center justify-center text-white text-xs font-medium">950</div>
-                    </div>
-                </div>
-                
-                <!-- Red -->
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Red</h3>
-                    <div class="grid grid-cols-11 gap-1">
-                        <div class="bg-red-50 h-16 rounded flex items-center justify-center text-red-900 text-xs font-medium">50</div>
-                        <div class="bg-red-100 h-16 rounded flex items-center justify-center text-red-900 text-xs font-medium">100</div>
-                        <div class="bg-red-200 h-16 rounded flex items-center justify-center text-red-900 text-xs font-medium">200</div>
-                        <div class="bg-red-300 h-16 rounded flex items-center justify-center text-red-900 text-xs font-medium">300</div>
-                        <div class="bg-red-400 h-16 rounded flex items-center justify-center text-red-900 text-xs font-medium">400</div>
-                        <div class="bg-red-500 h-16 rounded flex items-center justify-center text-white text-xs font-medium">500</div>
-                        <div class="bg-red-600 h-16 rounded flex items-center justify-center text-white text-xs font-medium">600</div>
-                        <div class="bg-red-700 h-16 rounded flex items-center justify-center text-white text-xs font-medium">700</div>
-                        <div class="bg-red-800 h-16 rounded flex items-center justify-center text-white text-xs font-medium">800</div>
-                        <div class="bg-red-900 h-16 rounded flex items-center justify-center text-white text-xs font-medium">900</div>
-                        <div class="bg-red-950 h-16 rounded flex items-center justify-center text-white text-xs font-medium">950</div>
-                    </div>
-                </div>
-                
-                <!-- Orange -->
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Orange</h3>
-                    <div class="grid grid-cols-11 gap-1">
-                        <div class="bg-orange-50 h-16 rounded flex items-center justify-center text-orange-900 text-xs font-medium">50</div>
-                        <div class="bg-orange-100 h-16 rounded flex items-center justify-center text-orange-900 text-xs font-medium">100</div>
-                        <div class="bg-orange-200 h-16 rounded flex items-center justify-center text-orange-900 text-xs font-medium">200</div>
-                        <div class="bg-orange-300 h-16 rounded flex items-center justify-center text-orange-900 text-xs font-medium">300</div>
-                        <div class="bg-orange-400 h-16 rounded flex items-center justify-center text-orange-900 text-xs font-medium">400</div>
-                        <div class="bg-orange-500 h-16 rounded flex items-center justify-center text-white text-xs font-medium">500</div>
-                        <div class="bg-orange-600 h-16 rounded flex items-center justify-center text-white text-xs font-medium">600</div>
-                        <div class="bg-orange-700 h-16 rounded flex items-center justify-center text-white text-xs font-medium">700</div>
-                        <div class="bg-orange-800 h-16 rounded flex items-center justify-center text-white text-xs font-medium">800</div>
-                        <div class="bg-orange-900 h-16 rounded flex items-center justify-center text-white text-xs font-medium">900</div>
-                        <div class="bg-orange-950 h-16 rounded flex items-center justify-center text-white text-xs font-medium">950</div>
-                    </div>
-                </div>
-                
-                <!-- Purple -->
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Purple</h3>
-                    <div class="grid grid-cols-11 gap-1">
-                        <div class="bg-purple-50 h-16 rounded flex items-center justify-center text-purple-900 text-xs font-medium">50</div>
-                        <div class="bg-purple-100 h-16 rounded flex items-center justify-center text-purple-900 text-xs font-medium">100</div>
-                        <div class="bg-purple-200 h-16 rounded flex items-center justify-center text-purple-900 text-xs font-medium">200</div>
-                        <div class="bg-purple-300 h-16 rounded flex items-center justify-center text-purple-900 text-xs font-medium">300</div>
-                        <div class="bg-purple-400 h-16 rounded flex items-center justify-center text-purple-900 text-xs font-medium">400</div>
-                        <div class="bg-purple-500 h-16 rounded flex items-center justify-center text-white text-xs font-medium">500</div>
-                        <div class="bg-purple-600 h-16 rounded flex items-center justify-center text-white text-xs font-medium">600</div>
-                        <div class="bg-purple-700 h-16 rounded flex items-center justify-center text-white text-xs font-medium">700</div>
-                        <div class="bg-purple-800 h-16 rounded flex items-center justify-center text-white text-xs font-medium">800</div>
-                        <div class="bg-purple-900 h-16 rounded flex items-center justify-center text-white text-xs font-medium">900</div>
-                        <div class="bg-purple-950 h-16 rounded flex items-center justify-center text-white text-xs font-medium">950</div>
-                    </div>
-                </div>
-                
-                <!-- Pink -->
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Pink</h3>
-                    <div class="grid grid-cols-11 gap-1">
-                        <div class="bg-pink-50 h-16 rounded flex items-center justify-center text-pink-900 text-xs font-medium">50</div>
-                        <div class="bg-pink-100 h-16 rounded flex items-center justify-center text-pink-900 text-xs font-medium">100</div>
-                        <div class="bg-pink-200 h-16 rounded flex items-center justify-center text-pink-900 text-xs font-medium">200</div>
-                        <div class="bg-pink-300 h-16 rounded flex items-center justify-center text-pink-900 text-xs font-medium">300</div>
-                        <div class="bg-pink-400 h-16 rounded flex items-center justify-center text-pink-900 text-xs font-medium">400</div>
-                        <div class="bg-pink-500 h-16 rounded flex items-center justify-center text-white text-xs font-medium">500</div>
-                        <div class="bg-pink-600 h-16 rounded flex items-center justify-center text-white text-xs font-medium">600</div>
-                        <div class="bg-pink-700 h-16 rounded flex items-center justify-center text-white text-xs font-medium">700</div>
-                        <div class="bg-pink-800 h-16 rounded flex items-center justify-center text-white text-xs font-medium">800</div>
-                        <div class="bg-pink-900 h-16 rounded flex items-center justify-center text-white text-xs font-medium">900</div>
-                        <div class="bg-pink-950 h-16 rounded flex items-center justify-center text-white text-xs font-medium">950</div>
-                    </div>
-                </div>
-                
-                <!-- Yellow -->
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Yellow</h3>
-                    <div class="grid grid-cols-11 gap-1">
-                        <div class="bg-yellow-50 h-16 rounded flex items-center justify-center text-yellow-900 text-xs font-medium">50</div>
-                        <div class="bg-yellow-100 h-16 rounded flex items-center justify-center text-yellow-900 text-xs font-medium">100</div>
-                        <div class="bg-yellow-200 h-16 rounded flex items-center justify-center text-yellow-900 text-xs font-medium">200</div>
-                        <div class="bg-yellow-300 h-16 rounded flex items-center justify-center text-yellow-900 text-xs font-medium">300</div>
-                        <div class="bg-yellow-400 h-16 rounded flex items-center justify-center text-yellow-900 text-xs font-medium">400</div>
-                        <div class="bg-yellow-500 h-16 rounded flex items-center justify-center text-yellow-900 text-xs font-medium">500</div>
-                        <div class="bg-yellow-600 h-16 rounded flex items-center justify-center text-white text-xs font-medium">600</div>
-                        <div class="bg-yellow-700 h-16 rounded flex items-center justify-center text-white text-xs font-medium">700</div>
-                        <div class="bg-yellow-800 h-16 rounded flex items-center justify-center text-white text-xs font-medium">800</div>
-                        <div class="bg-yellow-900 h-16 rounded flex items-center justify-center text-white text-xs font-medium">900</div>
-                        <div class="bg-yellow-950 h-16 rounded flex items-center justify-center text-white text-xs font-medium">950</div>
-                    </div>
-                </div>
-                
-                <!-- Indigo -->
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Indigo</h3>
-                    <div class="grid grid-cols-11 gap-1">
-                        <div class="bg-indigo-50 h-16 rounded flex items-center justify-center text-indigo-900 text-xs font-medium">50</div>
-                        <div class="bg-indigo-100 h-16 rounded flex items-center justify-center text-indigo-900 text-xs font-medium">100</div>
-                        <div class="bg-indigo-200 h-16 rounded flex items-center justify-center text-indigo-900 text-xs font-medium">200</div>
-                        <div class="bg-indigo-300 h-16 rounded flex items-center justify-center text-indigo-900 text-xs font-medium">300</div>
-                        <div class="bg-indigo-400 h-16 rounded flex items-center justify-center text-indigo-900 text-xs font-medium">400</div>
-                        <div class="bg-indigo-500 h-16 rounded flex items-center justify-center text-white text-xs font-medium">500</div>
-                        <div class="bg-indigo-600 h-16 rounded flex items-center justify-center text-white text-xs font-medium">600</div>
-                        <div class="bg-indigo-700 h-16 rounded flex items-center justify-center text-white text-xs font-medium">700</div>
-                        <div class="bg-indigo-800 h-16 rounded flex items-center justify-center text-white text-xs font-medium">800</div>
-                        <div class="bg-indigo-900 h-16 rounded flex items-center justify-center text-white text-xs font-medium">900</div>
-                        <div class="bg-indigo-950 h-16 rounded flex items-center justify-center text-white text-xs font-medium">950</div>
-                    </div>
-                </div>
+      <!-- Links Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Links
+        </h2>
+        <div class="space-y-6">
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">
+              Basic Links
+            </h3>
+            <div class="flex flex-wrap gap-6">
+              <a href="#" class="link">Default Link</a>
+              <a href="#" class="link-no-underline">Link without underline</a>
+              <a href="#" class="link-bold">Bold Link</a>
+              <a href="#" class="link link-external">External Link</a>
             </div>
-        </section>
+          </div>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">
+              Links in Context
+            </h3>
+            <p class="text-gray-600">
+              This is a paragraph with an
+              <a href="#" class="link">inline link</a> that demonstrates how
+              links appear within text content. You can also have
+              <a href="#" class="link-bold">bold links</a> for emphasis or
+              <a href="#" class="link link-external">external links</a> that
+              open in new tabs.
+            </p>
+          </div>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Link List</h3>
+            <ul class="list-disc">
+              <li><a href="#" class="link">Documentation</a></li>
+              <li><a href="#" class="link">API Reference</a></li>
+              <li><a href="#" class="link">Support Center</a></li>
+              <li>
+                <a href="#" class="link link-external">GitHub Repository</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-        <!-- Shadow Styles Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Shadow Styles</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                <div>
-                    <h3 class="text-sm font-semibold mb-3 text-gray-600">shadow-sm</h3>
-                    <div class="bg-white rounded-lg p-6 shadow-sm">
-                        <p class="text-gray-700">Small shadow</p>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-sm font-semibold mb-3 text-gray-600">shadow-base</h3>
-                    <div class="bg-white rounded-lg p-6 shadow-base">
-                        <p class="text-gray-700">Base shadow</p>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-sm font-semibold mb-3 text-gray-600">shadow-md</h3>
-                    <div class="bg-white rounded-lg p-6 shadow-md">
-                        <p class="text-gray-700">Medium shadow</p>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-sm font-semibold mb-3 text-gray-600">shadow-lg</h3>
-                    <div class="bg-white rounded-lg p-6 shadow-lg">
-                        <p class="text-gray-700">Large shadow</p>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-sm font-semibold mb-3 text-gray-600">shadow-xl</h3>
-                    <div class="bg-white rounded-lg p-6 shadow-xl">
-                        <p class="text-gray-700">Extra large shadow</p>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-sm font-semibold mb-3 text-gray-600">shadow-2xl</h3>
-                    <div class="bg-white rounded-lg p-6 shadow-2xl">
-                        <p class="text-gray-700">2X large shadow</p>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-sm font-semibold mb-3 text-gray-600">shadow-inner</h3>
-                    <div class="bg-white rounded-lg p-6 shadow-inner">
-                        <p class="text-gray-700">Inner shadow</p>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-sm font-semibold mb-3 text-gray-600">shadow-none</h3>
-                    <div class="bg-white rounded-lg p-6 shadow-none border border-gray-200">
-                        <p class="text-gray-700">No shadow</p>
-                    </div>
-                </div>
+      <!-- Color Palette Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Color Palette
+        </h2>
+        <div class="space-y-8">
+          <!-- Gray Scale -->
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Gray</h3>
+            <div class="grid grid-cols-11 gap-1">
+              <div
+                class="flex h-16 items-center justify-center rounded bg-gray-50 text-xs font-medium text-gray-900"
+              >
+                50
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-gray-100 text-xs font-medium text-gray-900"
+              >
+                100
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-gray-200 text-xs font-medium text-gray-900"
+              >
+                200
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-gray-300 text-xs font-medium text-gray-900"
+              >
+                300
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-gray-400 text-xs font-medium text-gray-900"
+              >
+                400
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-gray-500 text-xs font-medium text-white"
+              >
+                500
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-gray-600 text-xs font-medium text-white"
+              >
+                600
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-gray-700 text-xs font-medium text-white"
+              >
+                700
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-gray-800 text-xs font-medium text-white"
+              >
+                800
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-gray-900 text-xs font-medium text-white"
+              >
+                900
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-gray-950 text-xs font-medium text-white"
+              >
+                950
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- Buttons Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Buttons</h2>
-            <div class="space-y-6">
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Variants</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <button class="btn btn-primary">
-                            <span class="btn-text">Primary</span>
-                        </button>
-                        <button class="btn btn-secondary">
-                            <span class="btn-text">Secondary</span>
-                        </button>
-                        <button class="btn btn-tertiary">
-                            <span class="btn-text">Tertiary</span>
-                        </button>
-                        <button class="btn btn-destructive">
-                            <span class="btn-text">Destructive</span>
-                        </button>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Sizes</h3>
-                    <div class="flex flex-wrap items-center gap-2">
-                        <button class="btn btn-primary btn-sm">
-                            <span class="btn-text">Small</span>
-                        </button>
-                        <button class="btn btn-primary">
-                            <span class="btn-text">Default</span>
-                        </button>
-                        <button class="btn btn-primary btn-lg">
-                            <span class="btn-text">Large</span>
-                        </button>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">With Icons</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <button class="btn btn-primary btn-icon">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
-                        </button>
-                        <button class="btn btn-primary">
-                            <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
-                            </svg>
-                            <span class="btn-text">Bookmark</span>
-                        </button>
-                        <button class="btn btn-tertiary">
-                            <span class="btn-text">Settings</span>
-                            <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="3"/>
-                                <path d="M12 1v6m0 6v6m4.22-13.22l4.24 4.24M1.54 9.54l4.24 4.24M12 1l-8.46 8.46M20.46 9.54L12 18"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">States</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <button class="btn btn-primary">
-                            <span class="btn-text">Default</span>
-                        </button>
-                        <button class="btn btn-primary !bg-light-blue-800">
-                            <span class="btn-text">Hover</span>
-                        </button>
-                        <button class="btn btn-primary !bg-light-blue-900">
-                            <span class="btn-text">Active/Pressed</span>
-                        </button>
-                        <button class="btn btn-primary !ring-[3px] !ring-light-blue-500 !ring-offset-2">
-                            <span class="btn-text">Focused</span>
-                        </button>
-                        <button class="btn btn-primary" disabled>
-                            <span class="btn-text">Disabled</span>
-                        </button>
-                    </div>
-                </div>
+          <!-- Blue -->
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Blue</h3>
+            <div class="grid grid-cols-11 gap-1">
+              <div
+                class="flex h-16 items-center justify-center rounded bg-blue-50 text-xs font-medium text-blue-900"
+              >
+                50
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-blue-100 text-xs font-medium text-blue-900"
+              >
+                100
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-blue-200 text-xs font-medium text-blue-900"
+              >
+                200
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-blue-300 text-xs font-medium text-blue-900"
+              >
+                300
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-blue-400 text-xs font-medium text-blue-900"
+              >
+                400
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-blue-500 text-xs font-medium text-white"
+              >
+                500
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-blue-600 text-xs font-medium text-white"
+              >
+                600
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-blue-700 text-xs font-medium text-white"
+              >
+                700
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-blue-800 text-xs font-medium text-white"
+              >
+                800
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-blue-900 text-xs font-medium text-white"
+              >
+                900
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-blue-950 text-xs font-medium text-white"
+              >
+                950
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- Cards Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Cards</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="card card-hover">
-                    <div class="card-header">
-                        <h3 class="card-title">Card Title</h3>
-                        <p class="card-description">Card description goes here.</p>
-                    </div>
-                    <div class="card-content">
-                        <p>Card content goes here. This is the main body of the card.</p>
-                    </div>
-                    <div class="card-footer">
-                        <button class="btn btn-tertiary btn-sm">Cancel</button>
-                        <button class="btn btn-primary btn-sm">Deploy</button>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-header">
-                        <div class="flex items-center justify-between">
-                            <h3 class="card-title">Notifications</h3>
-                            <span class="badge badge-secondary">3 new</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <div class="space-y-2">
-                            <p class="text-sm">Your call has been confirmed.</p>
-                            <p class="text-sm text-gray-500">1 hour ago</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card card-compact">
-                    <div class="card-body">
-                        <h3 class="card-title">Compact Card</h3>
-                        <p class="card-text">This is a compact card with less padding.</p>
-                    </div>
-                </div>
+          <!-- Light Blue -->
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Light Blue</h3>
+            <div class="grid grid-cols-11 gap-1">
+              <div
+                class="bg-light-blue-50 text-light-blue-900 flex h-16 items-center justify-center rounded text-xs font-medium"
+              >
+                50
+              </div>
+              <div
+                class="bg-light-blue-100 text-light-blue-900 flex h-16 items-center justify-center rounded text-xs font-medium"
+              >
+                100
+              </div>
+              <div
+                class="bg-light-blue-200 text-light-blue-900 flex h-16 items-center justify-center rounded text-xs font-medium"
+              >
+                200
+              </div>
+              <div
+                class="bg-light-blue-300 text-light-blue-900 flex h-16 items-center justify-center rounded text-xs font-medium"
+              >
+                300
+              </div>
+              <div
+                class="bg-light-blue-400 text-light-blue-900 flex h-16 items-center justify-center rounded text-xs font-medium"
+              >
+                400
+              </div>
+              <div
+                class="bg-light-blue-500 flex h-16 items-center justify-center rounded text-xs font-medium text-white"
+              >
+                500
+              </div>
+              <div
+                class="bg-light-blue-600 flex h-16 items-center justify-center rounded text-xs font-medium text-white"
+              >
+                600
+              </div>
+              <div
+                class="bg-light-blue-700 flex h-16 items-center justify-center rounded text-xs font-medium text-white"
+              >
+                700
+              </div>
+              <div
+                class="bg-light-blue-800 flex h-16 items-center justify-center rounded text-xs font-medium text-white"
+              >
+                800
+              </div>
+              <div
+                class="bg-light-blue-900 flex h-16 items-center justify-center rounded text-xs font-medium text-white"
+              >
+                900
+              </div>
+              <div
+                class="bg-light-blue-950 flex h-16 items-center justify-center rounded text-xs font-medium text-white"
+              >
+                950
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- Accordion Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Accordion</h2>
-            <div class="accordion">
-                <details class="accordion-item">
-                    <summary class="accordion-trigger">Is it accessible?</summary>
-                    <div class="accordion-content">
-                        Yes. It adheres to the WAI-ARIA design pattern using native HTML5 details/summary elements.
-                    </div>
-                </details>
-                <details class="accordion-item">
-                    <summary class="accordion-trigger">Is it styled?</summary>
-                    <div class="accordion-content">
-                        Yes. It comes with default styles that matches the other components' aesthetic using your custom color palette.
-                    </div>
-                </details>
-                <details class="accordion-item">
-                    <summary class="accordion-trigger">Is it animated?</summary>
-                    <div class="accordion-content">
-                        Yes. It's animated by default with smooth transitions, but you can disable it if you prefer.
-                    </div>
-                </details>
+          <!-- Green -->
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Green</h3>
+            <div class="grid grid-cols-11 gap-1">
+              <div
+                class="flex h-16 items-center justify-center rounded bg-green-50 text-xs font-medium text-green-900"
+              >
+                50
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-green-100 text-xs font-medium text-green-900"
+              >
+                100
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-green-200 text-xs font-medium text-green-900"
+              >
+                200
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-green-300 text-xs font-medium text-green-900"
+              >
+                300
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-green-400 text-xs font-medium text-green-900"
+              >
+                400
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-green-500 text-xs font-medium text-white"
+              >
+                500
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-green-600 text-xs font-medium text-white"
+              >
+                600
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-green-700 text-xs font-medium text-white"
+              >
+                700
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-green-800 text-xs font-medium text-white"
+              >
+                800
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-green-900 text-xs font-medium text-white"
+              >
+                900
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-green-950 text-xs font-medium text-white"
+              >
+                950
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- Alert Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Alerts</h2>
-            <div class="space-y-4">
-                <div class="alert alert-default">
-                    <svg class="alert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
-                    </svg>
-                    <div>
-                        <h6 class="alert-title">Heads up!</h6>
-                        <p class="alert-description">You can add components to your app using the cli.</p>
-                    </div>
-                </div>
-                
-                <div class="alert alert-info">
-                    <svg class="alert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <line x1="12" y1="16" x2="12" y2="16"></line>
-                        <line x1="12" y1="8" x2="12" y2="12"></line>
-                    </svg>
-                    <div>
-                        <h6 class="alert-title">Information</h6>
-                        <p class="alert-description">This is an informational alert message.</p>
-                    </div>
-                    <button class="alert-close" aria-label="Close">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                        </svg>
-                    </button>
-                </div>
-
-                <div class="alert alert-success">
-                    <svg class="alert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                    <div>
-                        <h6 class="alert-title">Success!</h6>
-                        <p class="alert-description">Your action has been completed successfully.</p>
-                    </div>
-                </div>
-
-                <div class="alert alert-warning">
-                    <svg class="alert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
-                        <line x1="12" y1="9" x2="12" y2="13"></line>
-                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
-                    </svg>
-                    <div>
-                        <h6 class="alert-title">Warning</h6>
-                        <p class="alert-description">Please review your input before proceeding.</p>
-                    </div>
-                    <button class="alert-close" aria-label="Close">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                        </svg>
-                    </button>
-                </div>
-                
-                <div class="alert alert-destructive">
-                    <svg class="alert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <line x1="12" y1="8" x2="12" y2="12"></line>
-                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                    </svg>
-                    <div>
-                        <h6 class="alert-title">Error</h6>
-                        <p class="alert-description">Your session has expired. Please log in again.</p>
-                    </div>
-                </div>
+          <!-- Teal -->
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Teal</h3>
+            <div class="grid grid-cols-11 gap-1">
+              <div
+                class="flex h-16 items-center justify-center rounded bg-teal-50 text-xs font-medium text-teal-900"
+              >
+                50
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-teal-100 text-xs font-medium text-teal-900"
+              >
+                100
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-teal-200 text-xs font-medium text-teal-900"
+              >
+                200
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-teal-300 text-xs font-medium text-teal-900"
+              >
+                300
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-teal-400 text-xs font-medium text-teal-900"
+              >
+                400
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-teal-500 text-xs font-medium text-white"
+              >
+                500
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-teal-600 text-xs font-medium text-white"
+              >
+                600
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-teal-700 text-xs font-medium text-white"
+              >
+                700
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-teal-800 text-xs font-medium text-white"
+              >
+                800
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-teal-900 text-xs font-medium text-white"
+              >
+                900
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-teal-950 text-xs font-medium text-white"
+              >
+                950
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- Badge Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Badges</h2>
+          <!-- Red -->
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Red</h3>
+            <div class="grid grid-cols-11 gap-1">
+              <div
+                class="flex h-16 items-center justify-center rounded bg-red-50 text-xs font-medium text-red-900"
+              >
+                50
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-red-100 text-xs font-medium text-red-900"
+              >
+                100
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-red-200 text-xs font-medium text-red-900"
+              >
+                200
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-red-300 text-xs font-medium text-red-900"
+              >
+                300
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-red-400 text-xs font-medium text-red-900"
+              >
+                400
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-red-500 text-xs font-medium text-white"
+              >
+                500
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-red-600 text-xs font-medium text-white"
+              >
+                600
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-red-700 text-xs font-medium text-white"
+              >
+                700
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-red-800 text-xs font-medium text-white"
+              >
+                800
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-red-900 text-xs font-medium text-white"
+              >
+                900
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-red-950 text-xs font-medium text-white"
+              >
+                950
+              </div>
+            </div>
+          </div>
+
+          <!-- Orange -->
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Orange</h3>
+            <div class="grid grid-cols-11 gap-1">
+              <div
+                class="flex h-16 items-center justify-center rounded bg-orange-50 text-xs font-medium text-orange-900"
+              >
+                50
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-orange-100 text-xs font-medium text-orange-900"
+              >
+                100
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-orange-200 text-xs font-medium text-orange-900"
+              >
+                200
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-orange-300 text-xs font-medium text-orange-900"
+              >
+                300
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-orange-400 text-xs font-medium text-orange-900"
+              >
+                400
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-orange-500 text-xs font-medium text-white"
+              >
+                500
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-orange-600 text-xs font-medium text-white"
+              >
+                600
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-orange-700 text-xs font-medium text-white"
+              >
+                700
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-orange-800 text-xs font-medium text-white"
+              >
+                800
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-orange-900 text-xs font-medium text-white"
+              >
+                900
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-orange-950 text-xs font-medium text-white"
+              >
+                950
+              </div>
+            </div>
+          </div>
+
+          <!-- Purple -->
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Purple</h3>
+            <div class="grid grid-cols-11 gap-1">
+              <div
+                class="flex h-16 items-center justify-center rounded bg-purple-50 text-xs font-medium text-purple-900"
+              >
+                50
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-purple-100 text-xs font-medium text-purple-900"
+              >
+                100
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-purple-200 text-xs font-medium text-purple-900"
+              >
+                200
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-purple-300 text-xs font-medium text-purple-900"
+              >
+                300
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-purple-400 text-xs font-medium text-purple-900"
+              >
+                400
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-purple-500 text-xs font-medium text-white"
+              >
+                500
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-purple-600 text-xs font-medium text-white"
+              >
+                600
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-purple-700 text-xs font-medium text-white"
+              >
+                700
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-purple-800 text-xs font-medium text-white"
+              >
+                800
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-purple-900 text-xs font-medium text-white"
+              >
+                900
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-purple-950 text-xs font-medium text-white"
+              >
+                950
+              </div>
+            </div>
+          </div>
+
+          <!-- Pink -->
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Pink</h3>
+            <div class="grid grid-cols-11 gap-1">
+              <div
+                class="flex h-16 items-center justify-center rounded bg-pink-50 text-xs font-medium text-pink-900"
+              >
+                50
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-pink-100 text-xs font-medium text-pink-900"
+              >
+                100
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-pink-200 text-xs font-medium text-pink-900"
+              >
+                200
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-pink-300 text-xs font-medium text-pink-900"
+              >
+                300
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-pink-400 text-xs font-medium text-pink-900"
+              >
+                400
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-pink-500 text-xs font-medium text-white"
+              >
+                500
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-pink-600 text-xs font-medium text-white"
+              >
+                600
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-pink-700 text-xs font-medium text-white"
+              >
+                700
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-pink-800 text-xs font-medium text-white"
+              >
+                800
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-pink-900 text-xs font-medium text-white"
+              >
+                900
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-pink-950 text-xs font-medium text-white"
+              >
+                950
+              </div>
+            </div>
+          </div>
+
+          <!-- Yellow -->
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Yellow</h3>
+            <div class="grid grid-cols-11 gap-1">
+              <div
+                class="flex h-16 items-center justify-center rounded bg-yellow-50 text-xs font-medium text-yellow-900"
+              >
+                50
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-yellow-100 text-xs font-medium text-yellow-900"
+              >
+                100
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-yellow-200 text-xs font-medium text-yellow-900"
+              >
+                200
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-yellow-300 text-xs font-medium text-yellow-900"
+              >
+                300
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-yellow-400 text-xs font-medium text-yellow-900"
+              >
+                400
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-yellow-500 text-xs font-medium text-yellow-900"
+              >
+                500
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-yellow-600 text-xs font-medium text-white"
+              >
+                600
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-yellow-700 text-xs font-medium text-white"
+              >
+                700
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-yellow-800 text-xs font-medium text-white"
+              >
+                800
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-yellow-900 text-xs font-medium text-white"
+              >
+                900
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-yellow-950 text-xs font-medium text-white"
+              >
+                950
+              </div>
+            </div>
+          </div>
+
+          <!-- Indigo -->
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Indigo</h3>
+            <div class="grid grid-cols-11 gap-1">
+              <div
+                class="flex h-16 items-center justify-center rounded bg-indigo-50 text-xs font-medium text-indigo-900"
+              >
+                50
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-indigo-100 text-xs font-medium text-indigo-900"
+              >
+                100
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-indigo-200 text-xs font-medium text-indigo-900"
+              >
+                200
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-indigo-300 text-xs font-medium text-indigo-900"
+              >
+                300
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-indigo-400 text-xs font-medium text-indigo-900"
+              >
+                400
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-indigo-500 text-xs font-medium text-white"
+              >
+                500
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-indigo-600 text-xs font-medium text-white"
+              >
+                600
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-indigo-700 text-xs font-medium text-white"
+              >
+                700
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-indigo-800 text-xs font-medium text-white"
+              >
+                800
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-indigo-900 text-xs font-medium text-white"
+              >
+                900
+              </div>
+              <div
+                class="flex h-16 items-center justify-center rounded bg-indigo-950 text-xs font-medium text-white"
+              >
+                950
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Shadow Styles Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Shadow Styles
+        </h2>
+        <div
+          class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        >
+          <div>
+            <h3 class="mb-3 text-sm font-semibold text-gray-600">shadow-sm</h3>
+            <div class="rounded-lg bg-white p-6 shadow-sm">
+              <p class="text-gray-700">Small shadow</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="mb-3 text-sm font-semibold text-gray-600">
+              shadow-base
+            </h3>
+            <div class="shadow-base rounded-lg bg-white p-6">
+              <p class="text-gray-700">Base shadow</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="mb-3 text-sm font-semibold text-gray-600">shadow-md</h3>
+            <div class="rounded-lg bg-white p-6 shadow-md">
+              <p class="text-gray-700">Medium shadow</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="mb-3 text-sm font-semibold text-gray-600">shadow-lg</h3>
+            <div class="rounded-lg bg-white p-6 shadow-lg">
+              <p class="text-gray-700">Large shadow</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="mb-3 text-sm font-semibold text-gray-600">shadow-xl</h3>
+            <div class="rounded-lg bg-white p-6 shadow-xl">
+              <p class="text-gray-700">Extra large shadow</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="mb-3 text-sm font-semibold text-gray-600">shadow-2xl</h3>
+            <div class="rounded-lg bg-white p-6 shadow-2xl">
+              <p class="text-gray-700">2X large shadow</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="mb-3 text-sm font-semibold text-gray-600">
+              shadow-inner
+            </h3>
+            <div class="rounded-lg bg-white p-6 shadow-inner">
+              <p class="text-gray-700">Inner shadow</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="mb-3 text-sm font-semibold text-gray-600">
+              shadow-none
+            </h3>
+            <div
+              class="rounded-lg border border-gray-200 bg-white p-6 shadow-none"
+            >
+              <p class="text-gray-700">No shadow</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Buttons Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Buttons
+        </h2>
+        <div class="space-y-6">
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Variants</h3>
             <div class="flex flex-wrap gap-2">
-                <span class="badge badge-default">Default</span>
-                <span class="badge badge-primary">Primary</span>
-                <span class="badge badge-secondary">Secondary</span>
-                <span class="badge badge-success">Success</span>
-                <span class="badge badge-warning">Warning</span>
-                <span class="badge badge-danger">Danger</span>
-                <span class="badge badge-info">Info</span>
-                <span class="badge badge-destructive">Destructive</span>
-                <span class="badge badge-outline">Outline</span>
+              <button class="btn btn-primary">
+                <span class="btn-text">Primary</span>
+              </button>
+              <button class="btn btn-secondary">
+                <span class="btn-text">Secondary</span>
+              </button>
+              <button class="btn btn-tertiary">
+                <span class="btn-text">Tertiary</span>
+              </button>
+              <button class="btn btn-destructive">
+                <span class="btn-text">Destructive</span>
+              </button>
             </div>
-        </section>
-
-        <!-- Forms Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Form Elements</h2>
-            
-            <!-- Form Container Example -->
-            <div class="mb-8">
-                <h3 class="text-lg font-semibold text-gray-700 mb-4">Form Container</h3>
-                <form class="form">
-                    <div class="form-section">
-                        <h4 class="font-semibold mb-3">User Information</h4>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div>
-                                <label class="label">First Name</label>
-                                <input type="text" class="input" placeholder="John">
-                            </div>
-                            <div>
-                                <label class="label">Last Name</label>
-                                <input type="text" class="input" placeholder="Doe">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-section">
-                        <h4 class="font-semibold mb-3">Contact Details</h4>
-                        <div>
-                            <label class="label">Email</label>
-                            <input type="email" class="input" placeholder="john@example.com">
-                        </div>
-                    </div>
-                    <button type="button" class="btn btn-primary">Submit</button>
-                </form>
+          </div>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Sizes</h3>
+            <div class="flex flex-wrap items-center gap-2">
+              <button class="btn btn-primary btn-sm">
+                <span class="btn-text">Small</span>
+              </button>
+              <button class="btn btn-primary">
+                <span class="btn-text">Default</span>
+              </button>
+              <button class="btn btn-primary btn-lg">
+                <span class="btn-text">Large</span>
+              </button>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Input Fields -->
-                <div class="space-y-4">
-                    <h3 class="text-lg font-semibold text-gray-700">Input Fields</h3>
-                    <div class="form-group">
-                        <label class="label">Small Input</label>
-                        <input type="text" class="input input-sm" placeholder="Small size">
-                    </div>
-                    <div class="form-group">
-                        <label class="label label-required">Email (Default)</label>
-                        <input type="email" class="input" placeholder="m@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label class="label">Large Input</label>
-                        <input type="text" class="input input-lg" placeholder="Large size">
-                    </div>
-                    <div class="form-group">
-                        <label class="label">Password</label>
-                        <input type="password" class="input" placeholder="Enter your password">
-                    </div>
-                    <div class="form-group">
-                        <label class="label">With Error</label>
-                        <input type="text" class="input input-error" placeholder="Invalid input">
-                        <p class="text-sm text-red-600 mt-1">This field is required</p>
-                    </div>
-                    <div class="form-group">
-                        <label class="label">With Success</label>
-                        <input type="text" class="input input-success" value="Valid input">
-                        <p class="text-sm text-green-600 mt-1">Looks good!</p>
-                    </div>
-                    <div class="form-group">
-                        <label class="label">Disabled</label>
-                        <input type="text" class="input" disabled placeholder="Disabled input">
-                    </div>
-                </div>
-
-                <!-- Select and Textarea -->
-                <div class="space-y-4">
-                    <h3 class="text-lg font-semibold text-gray-700">Select & Textarea</h3>
-                    <div class="form-group">
-                        <label class="label">Select Framework</label>
-                        <select class="select">
-                            <option value="">Select a framework...</option>
-                            <option value="next">Next.js</option>
-                            <option value="remix">Remix</option>
-                            <option value="astro">Astro</option>
-                            <option value="gatsby">Gatsby</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label class="label">Message</label>
-                        <textarea class="textarea" rows="4" placeholder="Type your message here..."></textarea>
-                    </div>
-                </div>
+          </div>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">With Icons</h3>
+            <div class="flex flex-wrap gap-2">
+              <button class="btn btn-primary btn-icon">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+              <button class="btn btn-primary">
+                <svg
+                  class="btn-icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                </svg>
+                <span class="btn-text">Bookmark</span>
+              </button>
+              <button class="btn btn-tertiary">
+                <span class="btn-text">Settings</span>
+                <svg
+                  class="btn-icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="3" />
+                  <path
+                    d="M12 1v6m0 6v6m4.22-13.22l4.24 4.24M1.54 9.54l4.24 4.24M12 1l-8.46 8.46M20.46 9.54L12 18"
+                  />
+                </svg>
+              </button>
             </div>
-
-            <!-- Checkboxes and Radios -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-                <div class="space-y-4">
-                    <h3 class="text-lg font-semibold text-gray-700">Checkboxes</h3>
-                    <label class="checkbox-wrapper">
-                        <input type="checkbox" class="checkbox" checked>
-                        <span class="checkbox-label">Accept terms and conditions</span>
-                    </label>
-                    <label class="checkbox-wrapper">
-                        <input type="checkbox" class="checkbox">
-                        <span class="checkbox-label">Send me promotional emails</span>
-                    </label>
-                    <label class="checkbox-wrapper checkbox-disabled">
-                        <input type="checkbox" class="checkbox" disabled>
-                        <span class="checkbox-label">This option is disabled</span>
-                    </label>
-                </div>
-
-                <div class="space-y-4">
-                    <h3 class="text-lg font-semibold text-gray-700">Standalone Radio Buttons</h3>
-                    <div class="space-y-2 p-4 bg-white rounded-lg">
-                        <label class="flex items-center space-x-2">
-                            <input type="radio" name="option" class="radio" value="option1" checked>
-                            <span class="text-sm font-medium">Option 1</span>
-                        </label>
-                        <label class="flex items-center space-x-2">
-                            <input type="radio" name="option" class="radio" value="option2">
-                            <span class="text-sm font-medium">Option 2</span>
-                        </label>
-                        <label class="flex items-center space-x-2">
-                            <input type="radio" name="option" class="radio" value="option3">
-                            <span class="text-sm font-medium">Option 3</span>
-                        </label>
-                    </div>
-                    
-                    <h3 class="text-lg font-semibold text-gray-700 mt-6">Radio Group</h3>
-                    <div class="radio-group">
-                        <label class="radio-wrapper">
-                            <input type="radio" name="plan" class="radio" value="default" checked>
-                            <span class="radio-label">
-                                <span class="font-semibold">Default</span>
-                                <span class="text-sm text-gray-500">The default plan</span>
-                            </span>
-                        </label>
-                        <label class="radio-wrapper">
-                            <input type="radio" name="plan" class="radio" value="comfortable">
-                            <span class="radio-label">
-                                <span class="font-semibold">Comfortable</span>
-                                <span class="text-sm text-gray-500">A more comfortable plan</span>
-                            </span>
-                        </label>
-                        <label class="radio-wrapper">
-                            <input type="radio" name="plan" class="radio" value="compact">
-                            <span class="radio-label">
-                                <span class="font-semibold">Compact</span>
-                                <span class="text-sm text-gray-500">A compact plan</span>
-                            </span>
-                        </label>
-                    </div>
-                </div>
+          </div>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">States</h3>
+            <div class="flex flex-wrap gap-2">
+              <button class="btn btn-primary">
+                <span class="btn-text">Default</span>
+              </button>
+              <button class="btn btn-primary !bg-light-blue-800">
+                <span class="btn-text">Hover</span>
+              </button>
+              <button class="btn btn-primary !bg-light-blue-900">
+                <span class="btn-text">Active/Pressed</span>
+              </button>
+              <button
+                class="btn btn-primary !ring-light-blue-500 !ring-[3px] !ring-offset-2"
+              >
+                <span class="btn-text">Focused</span>
+              </button>
+              <button class="btn btn-primary" disabled>
+                <span class="btn-text">Disabled</span>
+              </button>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- Toggle Switches -->
-            <div class="space-y-4 mt-6">
-                <h3 class="text-lg font-semibold text-gray-700">Toggle Switches</h3>
-                <label class="switch-wrapper">
-                    <input type="checkbox" class="switch">
-                    <span class="switch-slider"></span>
-                    <span class="switch-label">Airplane Mode</span>
-                </label>
-                <label class="switch-wrapper">
-                    <input type="checkbox" class="switch" checked>
-                    <span class="switch-slider"></span>
-                    <span class="switch-label">Notifications</span>
-                </label>
-                <label class="switch-wrapper switch-disabled">
-                    <input type="checkbox" class="switch" disabled>
-                    <span class="switch-slider"></span>
-                    <span class="switch-label">Disabled</span>
-                </label>
+      <!-- Cards Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Cards
+        </h2>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div class="card card-hover">
+            <div class="card-header">
+              <h3 class="card-title">Card Title</h3>
+              <p class="card-description">Card description goes here.</p>
             </div>
-        </section>
-
-        <!-- Tabs Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Tabs</h2>
-            <div class="tabs">
-                <div class="tabs-list">
-                    <input type="radio" name="tabs" id="tab1" class="tab-trigger-input" checked>
-                    <label for="tab1" class="tab-trigger">Account</label>
-                    
-                    <input type="radio" name="tabs" id="tab2" class="tab-trigger-input">
-                    <label for="tab2" class="tab-trigger">Password</label>
-                    
-                    <input type="radio" name="tabs" id="tab3" class="tab-trigger-input">
-                    <label for="tab3" class="tab-trigger">Settings</label>
-                </div>
-                
-                <div class="tab-content-full" data-tab="tab1">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title">Account</h3>
-                            <p class="card-description">Make changes to your account here.</p>
-                        </div>
-                        <div class="card-content">
-                            <div class="form-group">
-                                <label class="label">Name</label>
-                                <input type="text" class="input" value="John Doe">
-                            </div>
-                            <div class="form-group">
-                                <label class="label">Username</label>
-                                <input type="text" class="input" value="@johndoe">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="tab-content-full" data-tab="tab2">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title">Password</h3>
-                            <p class="card-description">Change your password here.</p>
-                        </div>
-                        <div class="card-content">
-                            <div class="form-group">
-                                <label class="label">Current Password</label>
-                                <input type="password" class="input">
-                            </div>
-                            <div class="form-group">
-                                <label class="label">New Password</label>
-                                <input type="password" class="input">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="tab-content-full" data-tab="tab3">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title">Settings</h3>
-                            <p class="card-description">Manage your settings and preferences.</p>
-                        </div>
-                        <div class="card-content">
-                            <p>Settings content goes here...</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="card-content">
+              <p>Card content goes here. This is the main body of the card.</p>
             </div>
-        </section>
-
-        <!-- Avatar Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Avatars</h2>
-            <div class="flex items-center space-x-4">
-                <div class="avatar avatar-xs">
-                    <img src="https://ui-avatars.com/api/?name=XS&size=32&background=0070a9&color=ffffff" alt="XS">
-                </div>
-                <div class="avatar avatar-sm">
-                    <img src="https://ui-avatars.com/api/?name=SM&size=40&background=0070a9&color=ffffff" alt="SM">
-                </div>
-                <div class="avatar avatar-md">
-                    <img src="https://ui-avatars.com/api/?name=MD&size=48&background=0070a9&color=ffffff" alt="MD">
-                </div>
-                <div class="avatar avatar-lg">
-                    <img src="https://ui-avatars.com/api/?name=LG&size=64&background=0070a9&color=ffffff" alt="LG">
-                </div>
-                <div class="avatar avatar-xl">
-                    <img src="https://ui-avatars.com/api/?name=XL&size=96&background=0070a9&color=ffffff" alt="XL">
-                </div>
-                <div class="avatar avatar-md avatar-fallback">
-                    <span>CN</span>
-                </div>
+            <div class="card-footer">
+              <button class="btn btn-tertiary btn-sm">Cancel</button>
+              <button class="btn btn-primary btn-sm">Deploy</button>
             </div>
-        </section>
+          </div>
 
-        <!-- Breadcrumb Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Breadcrumb</h2>
-            <nav class="breadcrumb">
-                <ol class="breadcrumb-list">
-                    <li class="breadcrumb-item">
-                        <a href="#" class="breadcrumb-link">Home</a>
-                    </li>
-                    <li class="breadcrumb-separator">/</li>
-                    <li class="breadcrumb-item">
-                        <a href="#" class="breadcrumb-link">Components</a>
-                    </li>
-                    <li class="breadcrumb-separator">/</li>
-                    <li class="breadcrumb-item">
-                        <span class="breadcrumb-page">Breadcrumb</span>
-                    </li>
-                </ol>
-            </nav>
-        </section>
+          <div class="card">
+            <div class="card-header">
+              <div class="flex items-center justify-between">
+                <h3 class="card-title">Notifications</h3>
+                <span class="badge badge-secondary">3 new</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="space-y-2">
+                <p class="text-sm">Your call has been confirmed.</p>
+                <p class="text-sm text-gray-500">1 hour ago</p>
+              </div>
+            </div>
+          </div>
 
-        <!-- Progress Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Progress Bars</h2>
-            <div class="space-y-4">
+          <div class="card card-compact">
+            <div class="card-body">
+              <h3 class="card-title">Compact Card</h3>
+              <p class="card-text">This is a compact card with less padding.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Accordion Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Accordion
+        </h2>
+        <div class="accordion">
+          <details class="accordion-item">
+            <summary class="accordion-trigger">Is it accessible?</summary>
+            <div class="accordion-content">
+              Yes. It adheres to the WAI-ARIA design pattern using native HTML5
+              details/summary elements.
+            </div>
+          </details>
+          <details class="accordion-item">
+            <summary class="accordion-trigger">Is it styled?</summary>
+            <div class="accordion-content">
+              Yes. It comes with default styles that matches the other
+              components' aesthetic using your custom color palette.
+            </div>
+          </details>
+          <details class="accordion-item">
+            <summary class="accordion-trigger">Is it animated?</summary>
+            <div class="accordion-content">
+              Yes. It's animated by default with smooth transitions, but you can
+              disable it if you prefer.
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- Alert Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Alerts
+        </h2>
+        <div class="space-y-4">
+          <div class="alert alert-default">
+            <svg
+              class="alert-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <div>
+              <h6 class="alert-title">Heads up!</h6>
+              <p class="alert-description">
+                You can add components to your app using the cli.
+              </p>
+            </div>
+          </div>
+
+          <div class="alert alert-info">
+            <svg
+              class="alert-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="16"></line>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+            </svg>
+            <div>
+              <h6 class="alert-title">Information</h6>
+              <p class="alert-description">
+                This is an informational alert message.
+              </p>
+            </div>
+            <button class="alert-close" aria-label="Close">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+
+          <div class="alert alert-success">
+            <svg
+              class="alert-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <div>
+              <h6 class="alert-title">Success!</h6>
+              <p class="alert-description">
+                Your action has been completed successfully.
+              </p>
+            </div>
+          </div>
+
+          <div class="alert alert-warning">
+            <svg
+              class="alert-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+              ></path>
+              <line x1="12" y1="9" x2="12" y2="13"></line>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+            <div>
+              <h6 class="alert-title">Warning</h6>
+              <p class="alert-description">
+                Please review your input before proceeding.
+              </p>
+            </div>
+            <button class="alert-close" aria-label="Close">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+
+          <div class="alert alert-destructive">
+            <svg
+              class="alert-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            <div>
+              <h6 class="alert-title">Error</h6>
+              <p class="alert-description">
+                Your session has expired. Please log in again.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Badge Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Badges
+        </h2>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge badge-default">Default</span>
+          <span class="badge badge-primary">Primary</span>
+          <span class="badge badge-secondary">Secondary</span>
+          <span class="badge badge-success">Success</span>
+          <span class="badge badge-warning">Warning</span>
+          <span class="badge badge-danger">Danger</span>
+          <span class="badge badge-info">Info</span>
+          <span class="badge badge-destructive">Destructive</span>
+          <span class="badge badge-outline">Outline</span>
+        </div>
+      </section>
+
+      <!-- Forms Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Form Elements
+        </h2>
+
+        <!-- Form Container Example -->
+        <div class="mb-8">
+          <h3 class="mb-4 text-lg font-semibold text-gray-700">
+            Form Container
+          </h3>
+          <form class="form">
+            <div class="form-section">
+              <h4 class="mb-3 font-semibold">User Information</h4>
+              <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
                 <div>
-                    <div class="flex justify-between mb-1">
-                        <span class="text-sm font-medium text-gray-700">Default</span>
-                        <span class="text-sm text-gray-500">25%</span>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 25%"></div>
-                    </div>
+                  <label class="label">First Name</label>
+                  <input type="text" class="input" placeholder="John" />
                 </div>
                 <div>
-                    <div class="flex justify-between mb-1">
-                        <span class="text-sm font-medium text-gray-700">Success</span>
-                        <span class="text-sm text-gray-500">50%</span>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-success" style="width: 50%"></div>
-                    </div>
+                  <label class="label">Last Name</label>
+                  <input type="text" class="input" placeholder="Doe" />
                 </div>
-                <div>
-                    <div class="flex justify-between mb-1">
-                        <span class="text-sm font-medium text-gray-700">Warning</span>
-                        <span class="text-sm text-gray-500">75%</span>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-warning" style="width: 75%"></div>
-                    </div>
-                </div>
-                <div>
-                    <div class="flex justify-between mb-1">
-                        <span class="text-sm font-medium text-gray-700">Danger</span>
-                        <span class="text-sm text-gray-500">90%</span>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-danger" style="width: 90%"></div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+            <div class="form-section">
+              <h4 class="mb-3 font-semibold">Contact Details</h4>
+              <div>
+                <label class="label">Email</label>
+                <input
+                  type="email"
+                  class="input"
+                  placeholder="john@example.com"
+                />
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
 
-        <!-- Skeleton Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Skeleton Loaders</h2>
-            <div class="space-y-4">
-                <div class="skeleton skeleton-text"></div>
-                <div class="skeleton skeleton-text skeleton-text-sm"></div>
-                <div class="skeleton skeleton-text skeleton-text-lg"></div>
-                <div class="flex items-center space-x-4">
-                    <div class="skeleton skeleton-circle"></div>
-                    <div class="space-y-2 flex-1">
-                        <div class="skeleton skeleton-text"></div>
-                        <div class="skeleton skeleton-text w-3/4"></div>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+          <!-- Input Fields -->
+          <div class="space-y-4">
+            <h3 class="text-lg font-semibold text-gray-700">Input Fields</h3>
+            <div class="form-group">
+              <label class="label">Small Input</label>
+              <input
+                type="text"
+                class="input input-sm"
+                placeholder="Small size"
+              />
+            </div>
+            <div class="form-group">
+              <label class="label label-required">Email (Default)</label>
+              <input type="email" class="input" placeholder="m@example.com" />
+            </div>
+            <div class="form-group">
+              <label class="label">Large Input</label>
+              <input
+                type="text"
+                class="input input-lg"
+                placeholder="Large size"
+              />
+            </div>
+            <div class="form-group">
+              <label class="label">Password</label>
+              <input
+                type="password"
+                class="input"
+                placeholder="Enter your password"
+              />
+            </div>
+            <div class="form-group">
+              <label class="label">With Error</label>
+              <input
+                type="text"
+                class="input input-error"
+                placeholder="Invalid input"
+              />
+              <p class="mt-1 text-sm text-red-600">This field is required</p>
+            </div>
+            <div class="form-group">
+              <label class="label">With Success</label>
+              <input
+                type="text"
+                class="input input-success"
+                value="Valid input"
+              />
+              <p class="mt-1 text-sm text-green-600">Looks good!</p>
+            </div>
+            <div class="form-group">
+              <label class="label">Disabled</label>
+              <input
+                type="text"
+                class="input"
+                disabled
+                placeholder="Disabled input"
+              />
+            </div>
+          </div>
+
+          <!-- Select and Textarea -->
+          <div class="space-y-4">
+            <h3 class="text-lg font-semibold text-gray-700">
+              Select & Textarea
+            </h3>
+            <div class="form-group">
+              <label class="label">Select Framework</label>
+              <select class="select">
+                <option value="">Select a framework...</option>
+                <option value="next">Next.js</option>
+                <option value="remix">Remix</option>
+                <option value="astro">Astro</option>
+                <option value="gatsby">Gatsby</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="label">Message</label>
+              <textarea
+                class="textarea"
+                rows="4"
+                placeholder="Type your message here..."
+              ></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- Checkboxes and Radios -->
+        <div class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div class="space-y-4">
+            <h3 class="text-lg font-semibold text-gray-700">Checkboxes</h3>
+            <label class="checkbox-wrapper">
+              <input type="checkbox" class="checkbox" checked />
+              <span class="checkbox-label">Accept terms and conditions</span>
+            </label>
+            <label class="checkbox-wrapper">
+              <input type="checkbox" class="checkbox" />
+              <span class="checkbox-label">Send me promotional emails</span>
+            </label>
+            <label class="checkbox-wrapper checkbox-disabled">
+              <input type="checkbox" class="checkbox" disabled />
+              <span class="checkbox-label">This option is disabled</span>
+            </label>
+          </div>
+
+          <div class="space-y-4">
+            <h3 class="text-lg font-semibold text-gray-700">
+              Standalone Radio Buttons
+            </h3>
+            <div class="space-y-2 rounded-lg bg-white p-4">
+              <label class="flex items-center space-x-2">
+                <input
+                  type="radio"
+                  name="option"
+                  class="radio"
+                  value="option1"
+                  checked
+                />
+                <span class="text-sm font-medium">Option 1</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="radio"
+                  name="option"
+                  class="radio"
+                  value="option2"
+                />
+                <span class="text-sm font-medium">Option 2</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="radio"
+                  name="option"
+                  class="radio"
+                  value="option3"
+                />
+                <span class="text-sm font-medium">Option 3</span>
+              </label>
+            </div>
+
+            <h3 class="mt-6 text-lg font-semibold text-gray-700">
+              Radio Group
+            </h3>
+            <div class="radio-group">
+              <label class="radio-wrapper">
+                <input
+                  type="radio"
+                  name="plan"
+                  class="radio"
+                  value="default"
+                  checked
+                />
+                <span class="radio-label">
+                  <span class="font-semibold">Default</span>
+                  <span class="text-sm text-gray-500">The default plan</span>
+                </span>
+              </label>
+              <label class="radio-wrapper">
+                <input
+                  type="radio"
+                  name="plan"
+                  class="radio"
+                  value="comfortable"
+                />
+                <span class="radio-label">
+                  <span class="font-semibold">Comfortable</span>
+                  <span class="text-sm text-gray-500"
+                    >A more comfortable plan</span
+                  >
+                </span>
+              </label>
+              <label class="radio-wrapper">
+                <input type="radio" name="plan" class="radio" value="compact" />
+                <span class="radio-label">
+                  <span class="font-semibold">Compact</span>
+                  <span class="text-sm text-gray-500">A compact plan</span>
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Toggle Switches -->
+        <div class="mt-6 space-y-4">
+          <h3 class="text-lg font-semibold text-gray-700">Toggle Switches</h3>
+          <label class="switch-wrapper">
+            <input type="checkbox" class="switch" />
+            <span class="switch-slider"></span>
+            <span class="switch-label">Airplane Mode</span>
+          </label>
+          <label class="switch-wrapper">
+            <input type="checkbox" class="switch" checked />
+            <span class="switch-slider"></span>
+            <span class="switch-label">Notifications</span>
+          </label>
+          <label class="switch-wrapper switch-disabled">
+            <input type="checkbox" class="switch" disabled />
+            <span class="switch-slider"></span>
+            <span class="switch-label">Disabled</span>
+          </label>
+        </div>
+      </section>
+
+      <!-- Tabs Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Tabs
+        </h2>
+        <div class="tabs">
+          <div class="tabs-list">
+            <input
+              type="radio"
+              name="tabs"
+              id="tab1"
+              class="tab-trigger-input"
+              checked
+            />
+            <label for="tab1" class="tab-trigger">Account</label>
+
+            <input
+              type="radio"
+              name="tabs"
+              id="tab2"
+              class="tab-trigger-input"
+            />
+            <label for="tab2" class="tab-trigger">Password</label>
+
+            <input
+              type="radio"
+              name="tabs"
+              id="tab3"
+              class="tab-trigger-input"
+            />
+            <label for="tab3" class="tab-trigger">Settings</label>
+          </div>
+
+          <div class="tab-content-full" data-tab="tab1">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Account</h3>
+                <p class="card-description">
+                  Make changes to your account here.
+                </p>
+              </div>
+              <div class="card-content">
+                <div class="form-group">
+                  <label class="label">Name</label>
+                  <input type="text" class="input" value="John Doe" />
+                </div>
+                <div class="form-group">
+                  <label class="label">Username</label>
+                  <input type="text" class="input" value="@johndoe" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content-full" data-tab="tab2">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Password</h3>
+                <p class="card-description">Change your password here.</p>
+              </div>
+              <div class="card-content">
+                <div class="form-group">
+                  <label class="label">Current Password</label>
+                  <input type="password" class="input" />
+                </div>
+                <div class="form-group">
+                  <label class="label">New Password</label>
+                  <input type="password" class="input" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content-full" data-tab="tab3">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Settings</h3>
+                <p class="card-description">
+                  Manage your settings and preferences.
+                </p>
+              </div>
+              <div class="card-content">
+                <p>Settings content goes here...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Avatar Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Avatars
+        </h2>
+        <div class="flex items-center space-x-4">
+          <div class="avatar avatar-xs">
+            <img
+              src="https://ui-avatars.com/api/?name=XS&size=32&background=0070a9&color=ffffff"
+              alt="XS"
+            />
+          </div>
+          <div class="avatar avatar-sm">
+            <img
+              src="https://ui-avatars.com/api/?name=SM&size=40&background=0070a9&color=ffffff"
+              alt="SM"
+            />
+          </div>
+          <div class="avatar avatar-md">
+            <img
+              src="https://ui-avatars.com/api/?name=MD&size=48&background=0070a9&color=ffffff"
+              alt="MD"
+            />
+          </div>
+          <div class="avatar avatar-lg">
+            <img
+              src="https://ui-avatars.com/api/?name=LG&size=64&background=0070a9&color=ffffff"
+              alt="LG"
+            />
+          </div>
+          <div class="avatar avatar-xl">
+            <img
+              src="https://ui-avatars.com/api/?name=XL&size=96&background=0070a9&color=ffffff"
+              alt="XL"
+            />
+          </div>
+          <div class="avatar avatar-md avatar-fallback">
+            <span>CN</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Breadcrumb Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Breadcrumb
+        </h2>
+        <nav class="breadcrumb">
+          <ol class="breadcrumb-list">
+            <li class="breadcrumb-item">
+              <a href="#" class="breadcrumb-link">Home</a>
+            </li>
+            <li class="breadcrumb-separator">/</li>
+            <li class="breadcrumb-item">
+              <a href="#" class="breadcrumb-link">Components</a>
+            </li>
+            <li class="breadcrumb-separator">/</li>
+            <li class="breadcrumb-item">
+              <span class="breadcrumb-page">Breadcrumb</span>
+            </li>
+          </ol>
+        </nav>
+      </section>
+
+      <!-- Progress Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Progress Bars
+        </h2>
+        <div class="space-y-4">
+          <div>
+            <div class="mb-1 flex justify-between">
+              <span class="text-sm font-medium text-gray-700">Default</span>
+              <span class="text-sm text-gray-500">25%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" style="width: 25%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="mb-1 flex justify-between">
+              <span class="text-sm font-medium text-gray-700">Success</span>
+              <span class="text-sm text-gray-500">50%</span>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-success"
+                style="width: 50%"
+              ></div>
+            </div>
+          </div>
+          <div>
+            <div class="mb-1 flex justify-between">
+              <span class="text-sm font-medium text-gray-700">Warning</span>
+              <span class="text-sm text-gray-500">75%</span>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-warning"
+                style="width: 75%"
+              ></div>
+            </div>
+          </div>
+          <div>
+            <div class="mb-1 flex justify-between">
+              <span class="text-sm font-medium text-gray-700">Danger</span>
+              <span class="text-sm text-gray-500">90%</span>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-danger"
+                style="width: 90%"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skeleton Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Skeleton Loaders
+        </h2>
+        <div class="space-y-4">
+          <div class="skeleton skeleton-text"></div>
+          <div class="skeleton skeleton-text skeleton-text-sm"></div>
+          <div class="skeleton skeleton-text skeleton-text-lg"></div>
+          <div class="flex items-center space-x-4">
+            <div class="skeleton skeleton-circle"></div>
+            <div class="flex-1 space-y-2">
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text w-3/4"></div>
+            </div>
+          </div>
+          <div class="skeleton skeleton-card"></div>
+        </div>
+      </section>
+
+      <!-- Table Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Table
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Invoice</th>
+                <th>Status</th>
+                <th>Method</th>
+                <th class="text-right">Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="font-medium">INV001</td>
+                <td><span class="badge badge-success">Paid</span></td>
+                <td>Credit Card</td>
+                <td class="text-right">$250.00</td>
+              </tr>
+              <tr>
+                <td class="font-medium">INV002</td>
+                <td><span class="badge badge-warning">Pending</span></td>
+                <td>PayPal</td>
+                <td class="text-right">$150.00</td>
+              </tr>
+              <tr>
+                <td class="font-medium">INV003</td>
+                <td><span class="badge badge-secondary">Unpaid</span></td>
+                <td>Bank Transfer</td>
+                <td class="text-right">$350.00</td>
+              </tr>
+              <tr>
+                <td class="font-medium">INV004</td>
+                <td><span class="badge badge-danger">Cancelled</span></td>
+                <td>Wire Transfer</td>
+                <td class="text-right">$450.00</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3" class="font-semibold">Total</td>
+                <td class="text-right font-semibold">$1,200.00</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+
+      <!-- Tooltip Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Tooltips
+        </h2>
+        <div class="flex gap-4">
+          <div class="tooltip">
+            <button class="btn btn-tertiary">Top</button>
+            <span class="tooltip-content tooltip-top">Top tooltip</span>
+          </div>
+          <div class="tooltip">
+            <button class="btn btn-tertiary">Right</button>
+            <span class="tooltip-content tooltip-right">Right tooltip</span>
+          </div>
+          <div class="tooltip">
+            <button class="btn btn-tertiary">Bottom</button>
+            <span class="tooltip-content tooltip-bottom">Bottom tooltip</span>
+          </div>
+          <div class="tooltip">
+            <button class="btn btn-tertiary">Left</button>
+            <span class="tooltip-content tooltip-left">Left tooltip</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Separator Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Separators
+        </h2>
+        <div class="space-y-4">
+          <div>
+            <p class="text-gray-700">Content above separator</p>
+            <div class="separator"></div>
+            <p class="text-gray-700">Content below separator</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-gray-700">Left content</span>
+            <div class="separator-vertical"></div>
+            <span class="text-gray-700">Right content</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Spinner Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Spinners
+        </h2>
+        <div class="flex items-center gap-4">
+          <div class="spinner spinner-sm"></div>
+          <div class="spinner"></div>
+          <div class="spinner spinner-lg"></div>
+        </div>
+      </section>
+
+      <!-- Dialog Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Dialog (Modal)
+        </h2>
+        <input type="checkbox" id="dialog-toggle" class="dialog-toggle" />
+        <label for="dialog-toggle" class="btn btn-primary">Open Dialog</label>
+
+        <div class="dialog">
+          <div class="dialog-overlay">
+            <label for="dialog-toggle" class="dialog-overlay-close"></label>
+          </div>
+          <div class="dialog-content">
+            <div class="dialog-header">
+              <h3 class="dialog-title">Are you sure?</h3>
+              <label for="dialog-toggle" class="dialog-close">×</label>
+            </div>
+            <div class="dialog-body">
+              <p>
+                This action cannot be undone. This will permanently delete your
+                account and remove your data from our servers.
+              </p>
+            </div>
+            <div class="dialog-footer">
+              <label for="dialog-toggle" class="btn btn-tertiary">Cancel</label>
+              <button class="btn btn-destructive">Continue</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dropdown Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Dropdown
+        </h2>
+        <div class="dropdown">
+          <button class="btn btn-secondary">
+            Dropdown Menu
+            <svg
+              class="btn-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div class="dropdown-menu">
+            <div class="dropdown-item">Profile</div>
+            <div class="dropdown-item">Settings</div>
+            <div class="dropdown-item">Logout</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Modal
+        </h2>
+        <button class="btn btn-primary">Open Modal (Demo)</button>
+        <div class="modal hidden">
+          <div class="modal-overlay"></div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="text-xl font-semibold">Modal Title</h3>
+            </div>
+            <div class="modal-body">
+              <p>This is the modal body content.</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-tertiary">Cancel</button>
+              <button class="btn btn-primary">Confirm</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Collapsible Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Collapsible
+        </h2>
+        <div class="collapsible">
+          <input
+            type="checkbox"
+            id="collapsible-1"
+            class="collapsible-toggle"
+          />
+          <label for="collapsible-1" class="collapsible-trigger">
+            <span>Can I use this in my project?</span>
+            <svg
+              class="collapsible-icon"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </label>
+          <div class="collapsible-content">
+            <p>
+              Yes. Free to use for personal and commercial projects. No
+              attribution required.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chips/Tags Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Chips/Tags
+        </h2>
+        <div class="space-y-4">
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Variants</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="chip">Default</span>
+              <span class="chip chip-primary">Primary</span>
+              <span class="chip chip-success">Success</span>
+              <span class="chip chip-warning">Warning</span>
+              <span class="chip chip-danger">Danger</span>
+              <span class="chip chip-removable">
+                Removable
+                <span class="chip-remove">×</span>
+              </span>
+            </div>
+          </div>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Sizes</h3>
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="chip chip-sm">Small</span>
+              <span class="chip">Default</span>
+              <span class="chip chip-lg">Large</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- List Styles Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          List Styles
+        </h2>
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">
+              Unordered List
+            </h3>
+            <ul class="list-styled">
+              <li>First item in the list</li>
+              <li>Second item in the list</li>
+              <li>Third item in the list</li>
+              <li>Fourth item in the list</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">
+              Ordered List
+            </h3>
+            <ol class="list-numbered">
+              <li>First numbered item</li>
+              <li>Second numbered item</li>
+              <li>Third numbered item</li>
+              <li>Fourth numbered item</li>
+            </ol>
+          </div>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Check List</h3>
+            <ul class="list-check">
+              <li>Completed task</li>
+              <li>Another finished item</li>
+              <li>Done with this one</li>
+              <li>All tasks complete</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">Arrow List</h3>
+            <ul class="list-arrow">
+              <li>Step one in process</li>
+              <li>Step two in process</li>
+              <li>Step three in process</li>
+              <li>Final step</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">
+              Simple Disc List
+            </h3>
+            <ul class="list-disc">
+              <li>Simple bullet point</li>
+              <li>Another bullet point</li>
+              <li>Third bullet point</li>
+              <li>Last bullet point</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">
+              Simple Decimal List
+            </h3>
+            <ol class="list-decimal">
+              <li>Simple numbered item</li>
+              <li>Another numbered item</li>
+              <li>Third numbered item</li>
+              <li>Last numbered item</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Navigation Components -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Navigation Components
+        </h2>
+        <div class="space-y-6">
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">
+              Sidebar Navigation
+            </h3>
+            <div class="overflow-hidden rounded-lg bg-white shadow-sm">
+              <div class="flex">
+                <aside
+                  class="sidebar-nav"
+                  style="min-height: auto; width: 16rem"
+                >
+                  <div class="sidebar-nav-header">
+                    <h2 class="sidebar-nav-title">Dashboard</h2>
+                  </div>
+                  <nav class="sidebar-nav-content">
+                    <div class="nav nav-vertical">
+                      <a href="#" class="nav-item nav-item-active">
+                        <span>Overview</span>
+                      </a>
+                      <a href="#" class="nav-item nav-item-default">
+                        <span>Analytics</span>
+                      </a>
+                      <a href="#" class="nav-item nav-item-default">
+                        <span>Reports</span>
+                      </a>
+                      <a href="#" class="nav-item nav-item-default">
+                        <span>Users</span>
+                      </a>
+                      <a href="#" class="nav-item nav-item-disabled">
+                        <span>Settings</span>
+                      </a>
                     </div>
+                  </nav>
+                </aside>
+                <div class="flex-1 bg-gray-50 p-6">
+                  <p class="text-gray-600">Main content area</p>
                 </div>
-                <div class="skeleton skeleton-card"></div>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- Table Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Table</h2>
-            <div class="overflow-x-auto">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Invoice</th>
-                            <th>Status</th>
-                            <th>Method</th>
-                            <th class="text-right">Amount</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="font-medium">INV001</td>
-                            <td><span class="badge badge-success">Paid</span></td>
-                            <td>Credit Card</td>
-                            <td class="text-right">$250.00</td>
-                        </tr>
-                        <tr>
-                            <td class="font-medium">INV002</td>
-                            <td><span class="badge badge-warning">Pending</span></td>
-                            <td>PayPal</td>
-                            <td class="text-right">$150.00</td>
-                        </tr>
-                        <tr>
-                            <td class="font-medium">INV003</td>
-                            <td><span class="badge badge-secondary">Unpaid</span></td>
-                            <td>Bank Transfer</td>
-                            <td class="text-right">$350.00</td>
-                        </tr>
-                        <tr>
-                            <td class="font-medium">INV004</td>
-                            <td><span class="badge badge-danger">Cancelled</span></td>
-                            <td>Wire Transfer</td>
-                            <td class="text-right">$450.00</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="3" class="font-semibold">Total</td>
-                            <td class="text-right font-semibold">$1,200.00</td>
-                        </tr>
-                    </tfoot>
-                </table>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">
+              Horizontal Navigation
+            </h3>
+            <div class="rounded-lg bg-white p-6 shadow-sm">
+              <nav class="nav nav-horizontal">
+                <a href="#" class="nav-item nav-item-active">Home</a>
+                <a href="#" class="nav-item nav-item-default">Products</a>
+                <a href="#" class="nav-item nav-item-default">Services</a>
+                <a href="#" class="nav-item nav-item-default">About</a>
+                <a href="#" class="nav-item nav-item-disabled">Contact</a>
+              </nav>
             </div>
-        </section>
+          </div>
 
-        <!-- Tooltip Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Tooltips</h2>
-            <div class="flex gap-4">
-                <div class="tooltip">
-                    <button class="btn btn-tertiary">Top</button>
-                    <span class="tooltip-content tooltip-top">Top tooltip</span>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">
+              Navigation with Groups
+            </h3>
+            <div
+              class="overflow-hidden rounded-lg bg-white shadow-sm"
+              style="width: 16rem"
+            >
+              <nav class="p-4">
+                <div class="nav-group">
+                  <div class="nav-group-title">Main</div>
+                  <div class="nav-group-items nav-vertical">
+                    <a href="#" class="nav-item nav-item-active">Dashboard</a>
+                    <a href="#" class="nav-item nav-item-default">Projects</a>
+                    <a href="#" class="nav-item nav-item-default">Tasks</a>
+                  </div>
                 </div>
-                <div class="tooltip">
-                    <button class="btn btn-tertiary">Right</button>
-                    <span class="tooltip-content tooltip-right">Right tooltip</span>
+                <div class="nav-group">
+                  <div class="nav-group-title">Resources</div>
+                  <div class="nav-group-items nav-vertical">
+                    <a href="#" class="nav-item nav-item-default">Documents</a>
+                    <a href="#" class="nav-item nav-item-default">Images</a>
+                    <a href="#" class="nav-item nav-item-default">Videos</a>
+                  </div>
                 </div>
-                <div class="tooltip">
-                    <button class="btn btn-tertiary">Bottom</button>
-                    <span class="tooltip-content tooltip-bottom">Bottom tooltip</span>
-                </div>
-                <div class="tooltip">
-                    <button class="btn btn-tertiary">Left</button>
-                    <span class="tooltip-content tooltip-left">Left tooltip</span>
-                </div>
+              </nav>
             </div>
-        </section>
+          </div>
 
-        <!-- Separator Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Separators</h2>
-            <div class="space-y-4">
-                <div>
-                    <p class="text-gray-700">Content above separator</p>
-                    <div class="separator"></div>
-                    <p class="text-gray-700">Content below separator</p>
-                </div>
-                <div class="flex items-center gap-2">
-                    <span class="text-gray-700">Left content</span>
-                    <div class="separator-vertical"></div>
-                    <span class="text-gray-700">Right content</span>
-                </div>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">
+              Pills Navigation
+            </h3>
+            <div class="rounded-lg bg-white p-6 shadow-sm">
+              <nav class="nav-pills">
+                <button class="nav-pill nav-pill-active">All</button>
+                <button class="nav-pill">Active</button>
+                <button class="nav-pill">Pending</button>
+                <button class="nav-pill">Completed</button>
+              </nav>
             </div>
-        </section>
+          </div>
 
-        <!-- Spinner Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Spinners</h2>
-            <div class="flex items-center gap-4">
-                <div class="spinner spinner-sm"></div>
-                <div class="spinner"></div>
-                <div class="spinner spinner-lg"></div>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">
+              Tabs Navigation
+            </h3>
+            <div class="rounded-lg bg-white shadow-sm">
+              <nav class="nav-tabs px-6">
+                <button class="nav-tab nav-tab-active">Overview</button>
+                <button class="nav-tab">Analytics</button>
+                <button class="nav-tab">Reports</button>
+                <button class="nav-tab">Settings</button>
+              </nav>
+              <div class="p-6">
+                <p class="text-gray-600">Tab content area</p>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- Dialog Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Dialog (Modal)</h2>
-            <input type="checkbox" id="dialog-toggle" class="dialog-toggle">
-            <label for="dialog-toggle" class="btn btn-primary">Open Dialog</label>
-            
-            <div class="dialog">
-                <div class="dialog-overlay">
-                    <label for="dialog-toggle" class="dialog-overlay-close"></label>
-                </div>
-                <div class="dialog-content">
-                    <div class="dialog-header">
-                        <h3 class="dialog-title">Are you sure?</h3>
-                        <label for="dialog-toggle" class="dialog-close">×</label>
-                    </div>
-                    <div class="dialog-body">
-                        <p>This action cannot be undone. This will permanently delete your account and remove your data from our servers.</p>
-                    </div>
-                    <div class="dialog-footer">
-                        <label for="dialog-toggle" class="btn btn-tertiary">Cancel</label>
-                        <button class="btn btn-destructive">Continue</button>
-                    </div>
-                </div>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">
+              Breadcrumb Navigation
+            </h3>
+            <div class="rounded-lg bg-white p-6 shadow-sm">
+              <nav class="nav-breadcrumb">
+                <a href="#" class="nav-breadcrumb-item">Home</a>
+                <span class="nav-breadcrumb-separator">/</span>
+                <a href="#" class="nav-breadcrumb-item">Products</a>
+                <span class="nav-breadcrumb-separator">/</span>
+                <a href="#" class="nav-breadcrumb-item">Electronics</a>
+                <span class="nav-breadcrumb-separator">/</span>
+                <span class="nav-breadcrumb-current">Laptops</span>
+              </nav>
             </div>
-        </section>
+          </div>
 
-        <!-- Dropdown Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Dropdown</h2>
-            <div class="dropdown">
-                <button class="btn btn-secondary">
-                    Dropdown Menu
-                    <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M6 9l6 6 6-6"/>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">
+              Dots/Steps Navigation
+            </h3>
+            <div class="rounded-lg bg-white p-6 shadow-sm">
+              <nav class="nav-dots">
+                <button class="nav-dot"></button>
+                <button class="nav-dot nav-dot-active"></button>
+                <button class="nav-dot"></button>
+                <button class="nav-dot"></button>
+                <button class="nav-dot"></button>
+              </nav>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">
+              Navigation Sizes
+            </h3>
+            <div class="space-y-4 rounded-lg bg-white p-6 shadow-sm">
+              <nav class="nav nav-horizontal">
+                <a href="#" class="nav-item nav-item-sm nav-item-active"
+                  >Small</a
+                >
+                <a href="#" class="nav-item nav-item-sm nav-item-default"
+                  >Small</a
+                >
+                <a href="#" class="nav-item nav-item-sm nav-item-default"
+                  >Small</a
+                >
+              </nav>
+              <nav class="nav nav-horizontal">
+                <a href="#" class="nav-item nav-item-active">Default</a>
+                <a href="#" class="nav-item nav-item-default">Default</a>
+                <a href="#" class="nav-item nav-item-default">Default</a>
+              </nav>
+              <nav class="nav nav-horizontal">
+                <a href="#" class="nav-item nav-item-lg nav-item-active"
+                  >Large</a
+                >
+                <a href="#" class="nav-item nav-item-lg nav-item-default"
+                  >Large</a
+                >
+                <a href="#" class="nav-item nav-item-lg nav-item-default"
+                  >Large</a
+                >
+              </nav>
+            </div>
+          </div>
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">
+              Slim Navigation
+            </h3>
+            <div class="overflow-hidden rounded-lg bg-white shadow-sm">
+              <div class="flex" style="height: 400px">
+                <nav class="nav-slim">
+                  <a
+                    href="#"
+                    class="nav-slim-item"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Dashboard"
+                  >
+                    <svg
+                      class="nav-slim-icon"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"
+                      />
                     </svg>
-                </button>
-                <div class="dropdown-menu">
-                    <div class="dropdown-item">Profile</div>
-                    <div class="dropdown-item">Settings</div>
-                    <div class="dropdown-item">Logout</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Modal Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Modal</h2>
-            <button class="btn btn-primary">Open Modal (Demo)</button>
-            <div class="modal hidden">
-                <div class="modal-overlay"></div>
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="text-xl font-semibold">Modal Title</h3>
-                    </div>
-                    <div class="modal-body">
-                        <p>This is the modal body content.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-tertiary">Cancel</button>
-                        <button class="btn btn-primary">Confirm</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Collapsible Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Collapsible</h2>
-            <div class="collapsible">
-                <input type="checkbox" id="collapsible-1" class="collapsible-toggle">
-                <label for="collapsible-1" class="collapsible-trigger">
-                    <span>Can I use this in my project?</span>
-                    <svg class="collapsible-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="6 9 12 15 18 9"></polyline>
+                    <span class="nav-slim-label">Dashboard</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="nav-slim-item nav-slim-item-active"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Templates"
+                  >
+                    <svg
+                      class="nav-slim-icon"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"
+                      />
+                      <path d="M14 2v6h6" />
+                      <path d="M16 13H8" />
+                      <path d="M16 17H8" />
+                      <path d="M10 9H8" />
                     </svg>
-                </label>
-                <div class="collapsible-content">
-                    <p>Yes. Free to use for personal and commercial projects. No attribution required.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Chips/Tags Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Chips/Tags</h2>
-            <div class="space-y-4">
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Variants</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="chip">Default</span>
-                        <span class="chip chip-primary">Primary</span>
-                        <span class="chip chip-success">Success</span>
-                        <span class="chip chip-warning">Warning</span>
-                        <span class="chip chip-danger">Danger</span>
-                        <span class="chip chip-removable">
-                            Removable
-                            <span class="chip-remove">×</span>
-                        </span>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Sizes</h3>
-                    <div class="flex flex-wrap items-center gap-2">
-                        <span class="chip chip-sm">Small</span>
-                        <span class="chip">Default</span>
-                        <span class="chip chip-lg">Large</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- List Styles Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">List Styles</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Unordered List</h3>
-                    <ul class="list-styled">
-                        <li>First item in the list</li>
-                        <li>Second item in the list</li>
-                        <li>Third item in the list</li>
-                        <li>Fourth item in the list</li>
+                    <span class="nav-slim-label">Templates</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="nav-slim-item"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Usage"
+                  >
+                    <svg
+                      class="nav-slim-icon"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M3 3v18h18" />
+                      <path d="M18 17l-5-5-2 2-6-6" />
+                    </svg>
+                    <span class="nav-slim-label">Usage</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="nav-slim-item"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Deployments"
+                  >
+                    <svg
+                      class="nav-slim-icon"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M3 20v-8l9-9 9 9v8" />
+                      <path d="M21 12l-9-9-9 9" />
+                      <path d="M5 12v8h4v-6h6v6h4v-8" />
+                    </svg>
+                    <span class="nav-slim-label">Deployments</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="nav-slim-item"
+                    tabindex="0"
+                    role="button"
+                    aria-label="AI Models"
+                  >
+                    <svg
+                      class="nav-slim-icon"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="12" cy="12" r="3" />
+                      <path
+                        d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24"
+                      />
+                    </svg>
+                    <span class="nav-slim-label">AI Models</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="nav-slim-item"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Settings"
+                  >
+                    <svg
+                      class="nav-slim-icon"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="12" cy="12" r="3" />
+                      <path
+                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+                      />
+                    </svg>
+                    <span class="nav-slim-label">Settings</span>
+                  </a>
+                </nav>
+                <div class="flex-1 bg-gray-50 p-6">
+                  <h4 class="mb-2 text-lg font-semibold text-gray-900">
+                    Main Content Area
+                  </h4>
+                  <p class="mb-4 text-gray-600">
+                    This is the main content area next to the slim navigation.
+                    The navigation is 80px wide with 8px padding.
+                  </p>
+                  <div class="space-y-2">
+                    <p class="text-sm text-gray-500">
+                      <strong>Features:</strong>
+                    </p>
+                    <ul class="ml-4 space-y-1 text-sm text-gray-500">
+                      <li>• Fixed 80px width</li>
+                      <li>• Large icons with small labels</li>
+                      <li>• Active state with light blue styling</li>
+                      <li>• Hover effects for better UX</li>
+                      <li>• Responsive design (horizontal on mobile)</li>
+                      <li>• Full accessibility support</li>
                     </ul>
+                  </div>
                 </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Ordered List</h3>
-                    <ol class="list-numbered">
-                        <li>First numbered item</li>
-                        <li>Second numbered item</li>
-                        <li>Third numbered item</li>
-                        <li>Fourth numbered item</li>
-                    </ol>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Check List</h3>
-                    <ul class="list-check">
-                        <li>Completed task</li>
-                        <li>Another finished item</li>
-                        <li>Done with this one</li>
-                        <li>All tasks complete</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Arrow List</h3>
-                    <ul class="list-arrow">
-                        <li>Step one in process</li>
-                        <li>Step two in process</li>
-                        <li>Step three in process</li>
-                        <li>Final step</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Simple Disc List</h3>
-                    <ul class="list-disc">
-                        <li>Simple bullet point</li>
-                        <li>Another bullet point</li>
-                        <li>Third bullet point</li>
-                        <li>Last bullet point</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Simple Decimal List</h3>
-                    <ol class="list-decimal">
-                        <li>Simple numbered item</li>
-                        <li>Another numbered item</li>
-                        <li>Third numbered item</li>
-                        <li>Last numbered item</li>
-                    </ol>
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Navigation Components -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Navigation Components</h2>
-            <div class="space-y-6">
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Sidebar Navigation</h3>
-                    <div class="bg-white rounded-lg shadow-sm overflow-hidden">
-                        <div class="flex">
-                            <aside class="sidebar-nav" style="min-height: auto; width: 16rem;">
-                                <div class="sidebar-nav-header">
-                                    <h2 class="sidebar-nav-title">Dashboard</h2>
-                                </div>
-                                <nav class="sidebar-nav-content">
-                                    <div class="nav nav-vertical">
-                                        <a href="#" class="nav-item nav-item-active">
-                                            <span>Overview</span>
-                                        </a>
-                                        <a href="#" class="nav-item nav-item-default">
-                                            <span>Analytics</span>
-                                        </a>
-                                        <a href="#" class="nav-item nav-item-default">
-                                            <span>Reports</span>
-                                        </a>
-                                        <a href="#" class="nav-item nav-item-default">
-                                            <span>Users</span>
-                                        </a>
-                                        <a href="#" class="nav-item nav-item-disabled">
-                                            <span>Settings</span>
-                                        </a>
-                                    </div>
-                                </nav>
-                            </aside>
-                            <div class="flex-1 p-6 bg-gray-50">
-                                <p class="text-gray-600">Main content area</p>
-                            </div>
+      <!-- Header Component Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Header Component
+        </h2>
+        <div class="space-y-6">
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">
+              Basic Header
+            </h3>
+            <header class="header">
+              <div class="header-title">Application Header</div>
+            </header>
+          </div>
+
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">
+              Header with Navigation
+            </h3>
+            <header class="header flex items-center justify-between">
+              <div class="header-title">My Application</div>
+              <nav class="header-nav">
+                <a href="#" class="header-nav-item">Home</a>
+                <a href="#" class="header-nav-item">About</a>
+                <a href="#" class="header-nav-item">Services</a>
+                <a href="#" class="header-nav-item">Contact</a>
+              </nav>
+            </header>
+          </div>
+
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">
+              Header with Logo and Actions
+            </h3>
+            <header class="header flex items-center justify-between">
+              <div class="flex items-center space-x-4">
+                <div
+                  class="bg-light-blue-700 flex h-10 w-10 items-center justify-center rounded-lg font-bold text-white"
+                >
+                  L
+                </div>
+                <div class="header-title">Logo Brand</div>
+              </div>
+              <div class="flex items-center space-x-4">
+                <button class="btn btn-sm btn-secondary">Sign In</button>
+                <button class="btn btn-sm btn-primary">Get Started</button>
+              </div>
+            </header>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          Footer Components
+        </h2>
+        <div class="space-y-8">
+          <!-- Full Footer Example -->
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">
+              Complete Footer
+            </h3>
+            <div
+              class="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm"
+            >
+              <footer class="footer">
+                <div class="footer-container">
+                  <div class="footer-content">
+                    <!-- Brand Section -->
+                    <div class="footer-section">
+                      <div class="footer-brand">
+                        <div class="footer-logo">Your Company</div>
+                        <div class="footer-tagline">
+                          Building the future with innovative solutions
                         </div>
+                      </div>
+                      <div class="footer-social">
+                        <a
+                          href="#"
+                          class="footer-social-link"
+                          aria-label="Twitter"
+                        >
+                          <svg
+                            class="h-5 w-5"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"
+                            ></path>
+                          </svg>
+                        </a>
+                        <a
+                          href="#"
+                          class="footer-social-link"
+                          aria-label="LinkedIn"
+                        >
+                          <svg
+                            class="h-5 w-5"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </a>
+                        <a
+                          href="#"
+                          class="footer-social-link"
+                          aria-label="GitHub"
+                        >
+                          <svg
+                            class="h-5 w-5"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </a>
+                      </div>
                     </div>
-                </div>
 
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Horizontal Navigation</h3>
-                    <div class="bg-white rounded-lg p-6 shadow-sm">
-                        <nav class="nav nav-horizontal">
-                            <a href="#" class="nav-item nav-item-active">Home</a>
-                            <a href="#" class="nav-item nav-item-default">Products</a>
-                            <a href="#" class="nav-item nav-item-default">Services</a>
-                            <a href="#" class="nav-item nav-item-default">About</a>
-                            <a href="#" class="nav-item nav-item-disabled">Contact</a>
-                        </nav>
+                    <!-- Products Section -->
+                    <div class="footer-section">
+                      <div class="footer-title">Products</div>
+                      <div class="footer-list">
+                        <a href="#" class="footer-link">Web Analytics</a>
+                        <a href="#" class="footer-link">Email Marketing</a>
+                        <a href="#" class="footer-link">CRM Software</a>
+                        <a href="#" class="footer-link">Mobile Apps</a>
+                        <a href="#" class="footer-link">API Platform</a>
+                      </div>
                     </div>
-                </div>
 
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Navigation with Groups</h3>
-                    <div class="bg-white rounded-lg shadow-sm overflow-hidden" style="width: 16rem;">
-                        <nav class="p-4">
-                            <div class="nav-group">
-                                <div class="nav-group-title">Main</div>
-                                <div class="nav-group-items nav-vertical">
-                                    <a href="#" class="nav-item nav-item-active">Dashboard</a>
-                                    <a href="#" class="nav-item nav-item-default">Projects</a>
-                                    <a href="#" class="nav-item nav-item-default">Tasks</a>
-                                </div>
-                            </div>
-                            <div class="nav-group">
-                                <div class="nav-group-title">Resources</div>
-                                <div class="nav-group-items nav-vertical">
-                                    <a href="#" class="nav-item nav-item-default">Documents</a>
-                                    <a href="#" class="nav-item nav-item-default">Images</a>
-                                    <a href="#" class="nav-item nav-item-default">Videos</a>
-                                </div>
-                            </div>
-                        </nav>
+                    <!-- Company Section -->
+                    <div class="footer-section">
+                      <div class="footer-title">Company</div>
+                      <div class="footer-list">
+                        <a href="#" class="footer-link">About Us</a>
+                        <a href="#" class="footer-link">Careers</a>
+                        <a href="#" class="footer-link">Press</a>
+                        <a href="#" class="footer-link">Blog</a>
+                        <a href="#" class="footer-link">Contact</a>
+                      </div>
                     </div>
-                </div>
 
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Pills Navigation</h3>
-                    <div class="bg-white rounded-lg p-6 shadow-sm">
-                        <nav class="nav-pills">
-                            <button class="nav-pill nav-pill-active">All</button>
-                            <button class="nav-pill">Active</button>
-                            <button class="nav-pill">Pending</button>
-                            <button class="nav-pill">Completed</button>
-                        </nav>
+                    <!-- Newsletter Section -->
+                    <div class="footer-section">
+                      <div class="footer-title">Stay Updated</div>
+                      <div class="footer-text mb-4">
+                        Subscribe to our newsletter for the latest updates and
+                        insights.
+                      </div>
+                      <div class="footer-newsletter">
+                        <input
+                          type="email"
+                          placeholder="Enter your email"
+                          class="footer-newsletter-input"
+                        />
+                        <button class="footer-newsletter-button">
+                          Subscribe
+                        </button>
+                      </div>
                     </div>
-                </div>
+                  </div>
 
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Tabs Navigation</h3>
-                    <div class="bg-white rounded-lg shadow-sm">
-                        <nav class="nav-tabs px-6">
-                            <button class="nav-tab nav-tab-active">Overview</button>
-                            <button class="nav-tab">Analytics</button>
-                            <button class="nav-tab">Reports</button>
-                            <button class="nav-tab">Settings</button>
-                        </nav>
-                        <div class="p-6">
-                            <p class="text-gray-600">Tab content area</p>
+                  <div class="footer-divider">
+                    <div class="footer-bottom">
+                      <div class="footer-bottom-text">
+                        © 2024 Your Company. All rights reserved.
+                      </div>
+                      <div class="footer-bottom-links">
+                        <a href="#" class="footer-bottom-link"
+                          >Privacy Policy</a
+                        >
+                        <a href="#" class="footer-bottom-link"
+                          >Terms of Service</a
+                        >
+                        <a href="#" class="footer-bottom-link">Cookie Policy</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+
+          <!-- Compact Footer Example -->
+          <div>
+            <h3 class="mb-3 text-lg font-semibold text-gray-700">
+              Compact Footer
+            </h3>
+            <div
+              class="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm"
+            >
+              <footer class="footer-compact">
+                <div class="footer-container">
+                  <div class="footer-content">
+                    <!-- Brand Section -->
+                    <div class="footer-section">
+                      <div class="footer-logo">Brand</div>
+                      <div class="footer-text">© 2024 Your Company</div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-section">
+                      <div class="footer-title">Quick Links</div>
+                      <div class="footer-list">
+                        <a href="#" class="footer-link">About</a>
+                        <a href="#" class="footer-link">Support</a>
+                        <a href="#" class="footer-link">Contact</a>
+                      </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-section">
+                      <div class="footer-title">Contact</div>
+                      <div class="footer-contact">
+                        <div class="footer-contact-item">
+                          <svg
+                            class="footer-contact-icon"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                            ></path>
+                            <path
+                              d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                            ></path>
+                          </svg>
+                          hello@company.com
                         </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Breadcrumb Navigation</h3>
-                    <div class="bg-white rounded-lg p-6 shadow-sm">
-                        <nav class="nav-breadcrumb">
-                            <a href="#" class="nav-breadcrumb-item">Home</a>
-                            <span class="nav-breadcrumb-separator">/</span>
-                            <a href="#" class="nav-breadcrumb-item">Products</a>
-                            <span class="nav-breadcrumb-separator">/</span>
-                            <a href="#" class="nav-breadcrumb-item">Electronics</a>
-                            <span class="nav-breadcrumb-separator">/</span>
-                            <span class="nav-breadcrumb-current">Laptops</span>
-                        </nav>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Dots/Steps Navigation</h3>
-                    <div class="bg-white rounded-lg p-6 shadow-sm">
-                        <nav class="nav-dots">
-                            <button class="nav-dot"></button>
-                            <button class="nav-dot nav-dot-active"></button>
-                            <button class="nav-dot"></button>
-                            <button class="nav-dot"></button>
-                            <button class="nav-dot"></button>
-                        </nav>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Navigation Sizes</h3>
-                    <div class="bg-white rounded-lg p-6 shadow-sm space-y-4">
-                        <nav class="nav nav-horizontal">
-                            <a href="#" class="nav-item nav-item-sm nav-item-active">Small</a>
-                            <a href="#" class="nav-item nav-item-sm nav-item-default">Small</a>
-                            <a href="#" class="nav-item nav-item-sm nav-item-default">Small</a>
-                        </nav>
-                        <nav class="nav nav-horizontal">
-                            <a href="#" class="nav-item nav-item-active">Default</a>
-                            <a href="#" class="nav-item nav-item-default">Default</a>
-                            <a href="#" class="nav-item nav-item-default">Default</a>
-                        </nav>
-                        <nav class="nav nav-horizontal">
-                            <a href="#" class="nav-item nav-item-lg nav-item-active">Large</a>
-                            <a href="#" class="nav-item nav-item-lg nav-item-default">Large</a>
-                            <a href="#" class="nav-item nav-item-lg nav-item-default">Large</a>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Header Component Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">Header Component</h2>
-            <div class="space-y-6">
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Basic Header</h3>
-                    <header class="header">
-                        <div class="header-title">Application Header</div>
-                    </header>
-                </div>
-                
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Header with Navigation</h3>
-                    <header class="header flex justify-between items-center">
-                        <div class="header-title">My Application</div>
-                        <nav class="header-nav">
-                            <a href="#" class="header-nav-item">Home</a>
-                            <a href="#" class="header-nav-item">About</a>
-                            <a href="#" class="header-nav-item">Services</a>
-                            <a href="#" class="header-nav-item">Contact</a>
-                        </nav>
-                    </header>
-                </div>
-                
-                <div>
-                    <h3 class="text-lg font-semibold mb-3 text-gray-700">Header with Logo and Actions</h3>
-                    <header class="header flex justify-between items-center">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-10 h-10 bg-light-blue-700 rounded-lg flex items-center justify-center text-white font-bold">L</div>
-                            <div class="header-title">Logo Brand</div>
+                        <div class="footer-contact-item">
+                          <svg
+                            class="footer-contact-icon"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                          San Francisco, CA
                         </div>
-                        <div class="flex items-center space-x-4">
-                            <button class="btn btn-sm btn-secondary">Sign In</button>
-                            <button class="btn btn-sm btn-primary">Get Started</button>
-                        </div>
-                    </header>
-                </div>
-            </div>
-        </section>
-
-        <!-- App Layouts Section -->
-        <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b border-gray-200 pb-2">App Layouts</h2>
-            <p class="text-gray-600 mb-8">Example application layouts displayed at different viewport sizes. Each layout demonstrates how components work together in real-world applications.</p>
-            
-            <!-- Layout Controls -->
-            <div class="mb-6 flex flex-wrap gap-4 items-center">
-                <!-- Layout Selector -->
-                <div class="flex items-center gap-2">
-                    <label for="layout-selector" class="text-sm font-medium text-gray-700">Layout:</label>
-                    <select id="layout-selector" class="select">
-                        <option value="layouts/dashboard.html">Dashboard</option>
-                        <option value="layouts/form-layout.html">Form Layout</option>
-                        <option value="layouts/kanban.html">Kanban Board</option>
-                        <option value="layouts/landing.html">Landing Page</option>
-                    </select>
-                </div>
-                
-                <!-- Viewport Size Controls -->
-                <div class="flex items-center gap-2">
-                    <label class="text-sm font-medium text-gray-700">Viewport:</label>
-                    <div class="btn-group">
-                        <button class="btn btn-sm viewport-btn" data-width="375" data-height="667">Mobile</button>
-                        <button class="btn btn-sm viewport-btn" data-width="768" data-height="1024">Tablet</button>
-                        <button class="btn btn-sm viewport-btn btn-primary" data-width="1280" data-height="800">Desktop</button>
-                        <button class="btn btn-sm viewport-btn" data-width="1920" data-height="1080">Full HD</button>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                
-                <!-- Custom Size Input -->
-                <div class="flex items-center gap-2">
-                    <label class="text-sm font-medium text-gray-700">Custom:</label>
-                    <input type="number" id="custom-width" class="input input-sm" placeholder="Width" value="1280" style="width: 100px;">
-                    <span class="text-gray-500">×</span>
-                    <input type="number" id="custom-height" class="input input-sm" placeholder="Height" value="800" style="width: 100px;">
-                    <button class="btn btn-sm btn-secondary" id="apply-custom-size">Apply</button>
-                </div>
+              </footer>
             </div>
-            
-            <!-- Current Size Display -->
-            <div class="mb-4">
-                <span class="text-sm text-gray-600">Current viewport: <span id="viewport-size" class="font-semibold">1280 × 800</span></span>
-            </div>
-            
-            <!-- Viewport Container -->
-            <div class="border border-gray-300 rounded-lg overflow-auto bg-gray-50" style="max-width: 100%;">
-                <div id="viewport-wrapper" class="transition-all duration-300 mx-auto" style="width: 1280px;">
-                    <iframe id="layout-iframe" src="layouts/dashboard.html" class="w-full border-0 bg-white shadow-lg" style="height: 800px;" title="Layout Preview"></iframe>
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
+      <!-- App Layouts Section -->
+      <section class="mb-12">
+        <h2
+          class="mb-6 border-b border-gray-200 pb-2 text-3xl font-bold text-gray-800"
+        >
+          App Layouts
+        </h2>
+        <p class="mb-8 text-gray-600">
+          Example application layouts that demonstrate how components work
+          together in real-world applications.
+        </p>
+
+        <!-- Layout Links -->
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div
+            class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+          >
+            <h3 class="mb-3 text-lg font-semibold text-gray-900">Dashboard</h3>
+            <p class="mb-4 text-sm text-gray-600">
+              Admin dashboard with charts, tables, and navigation components.
+            </p>
+            <a
+              href="layouts/dashboard.html"
+              target="_blank"
+              class="link font-medium"
+              >View Dashboard →</a
+            >
+          </div>
+
+          <div
+            class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+          >
+            <h3 class="mb-3 text-lg font-semibold text-gray-900">
+              Form Layout
+            </h3>
+            <p class="mb-4 text-sm text-gray-600">
+              Complete form layout with various input types and validation.
+            </p>
+            <a
+              href="layouts/form-layout.html"
+              target="_blank"
+              class="link font-medium"
+              >View Form Layout →</a
+            >
+          </div>
+
+          <div
+            class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+          >
+            <h3 class="mb-3 text-lg font-semibold text-gray-900">
+              Kanban Board
+            </h3>
+            <p class="mb-4 text-sm text-gray-600">
+              Project management board with draggable cards and columns.
+            </p>
+            <a
+              href="layouts/kanban.html"
+              target="_blank"
+              class="link font-medium"
+              >View Kanban Board →</a
+            >
+          </div>
+
+          <div
+            class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+          >
+            <h3 class="mb-3 text-lg font-semibold text-gray-900">
+              Landing Page
+            </h3>
+            <p class="mb-4 text-sm text-gray-600">
+              Marketing landing page with hero section and call-to-actions.
+            </p>
+            <a
+              href="layouts/landing.html"
+              target="_blank"
+              class="link font-medium"
+              >View Landing Page →</a
+            >
+          </div>
+
+          <div
+            class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+          >
+            <h3 class="mb-3 text-lg font-semibold text-gray-900">Templates</h3>
+            <p class="mb-4 text-sm text-gray-600">
+              Document extraction templates page with sidebar navigation and
+              card grid.
+            </p>
+            <a
+              href="layouts/templates.html"
+              target="_blank"
+              class="link font-medium"
+              >View Templates →</a
+            >
+          </div>
+        
+        </div>
+      </section>
     </div>
-    
-    <!-- JavaScript for Layout Viewport Controls -->
-    <script>
-        // Get elements
-        const layoutSelector = document.getElementById('layout-selector');
-        const layoutIframe = document.getElementById('layout-iframe');
-        const viewportWrapper = document.getElementById('viewport-wrapper');
-        const viewportSizeDisplay = document.getElementById('viewport-size');
-        const viewportButtons = document.querySelectorAll('.viewport-btn');
-        const customWidthInput = document.getElementById('custom-width');
-        const customHeightInput = document.getElementById('custom-height');
-        const applyCustomSizeBtn = document.getElementById('apply-custom-size');
-        
-        // Function to update viewport size
-        function updateViewportSize(width, height) {
-            viewportWrapper.style.width = width + 'px';
-            layoutIframe.style.height = height + 'px';
-            viewportSizeDisplay.textContent = `${width} × ${height}`;
-            
-            // Update custom inputs
-            customWidthInput.value = width;
-            customHeightInput.value = height;
-            
-            // Update button states
-            viewportButtons.forEach(btn => {
-                btn.classList.remove('btn-primary');
-                if (btn.dataset.width == width && btn.dataset.height == height) {
-                    btn.classList.add('btn-primary');
-                }
-            });
-        }
-        
-        // Layout selector change handler
-        layoutSelector.addEventListener('change', (e) => {
-            layoutIframe.src = e.target.value;
-        });
-        
-        // Viewport button click handlers
-        viewportButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const width = parseInt(btn.dataset.width);
-                const height = parseInt(btn.dataset.height);
-                updateViewportSize(width, height);
-            });
-        });
-        
-        // Apply custom size
-        applyCustomSizeBtn.addEventListener('click', () => {
-            const width = parseInt(customWidthInput.value) || 1280;
-            const height = parseInt(customHeightInput.value) || 800;
-            updateViewportSize(width, height);
-        });
-        
-        // Enter key on custom inputs
-        [customWidthInput, customHeightInput].forEach(input => {
-            input.addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') {
-                    applyCustomSizeBtn.click();
-                }
-            });
-        });
-    </script>
-</body>
+  </body>
 </html>
