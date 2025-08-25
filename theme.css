@@ -427,334 +427,6 @@
   }
 }
 
-/* Navigation Components */
-
-@layer components {
-  /* Base Navigation Container */
-  .nav {
-    @apply px-4 pb-6;
-  }
-
-  .nav-vertical {
-    @apply flex flex-col space-y-1;
-  }
-
-  .nav-horizontal {
-    @apply flex flex-row items-center space-x-2;
-  }
-
-  /* Navigation Items */
-  .nav-item {
-    @apply flex items-center px-4 py-2 text-sm font-medium rounded-md transition-colors;
-  }
-
-  /* Default State */
-  .nav-item-default {
-    @apply text-gray-600 hover:text-gray-900 hover:bg-gray-50;
-  }
-
-  /* Active/Selected State */
-  .nav-item-active {
-    @apply text-light-blue-700 bg-light-blue-50;
-  }
-
-  /* Disabled State */
-  .nav-item-disabled {
-    @apply text-gray-400 cursor-not-allowed hover:bg-transparent hover:text-gray-400;
-  }
-
-  /* Size Variants */
-  .nav-item-sm {
-    @apply px-3 py-1.5 text-xs;
-  }
-
-  .nav-item-lg {
-    @apply px-5 py-3 text-base;
-  }
-
-  /* Navigation with Icons */
-  .nav-item-icon {
-    @apply mr-3 h-5 w-5;
-  }
-
-  .nav-item-icon-right {
-    @apply ml-3 h-5 w-5;
-  }
-
-  /* Navigation Groups */
-  .nav-group {
-    @apply mb-6;
-  }
-
-  .nav-group-title {
-    @apply px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider;
-  }
-
-  .nav-group-items {
-    @apply mt-2 space-y-1;
-  }
-
-  /* Sidebar Navigation Container */
-  .sidebar-nav {
-    @apply w-64 bg-white border-r border-gray-200 min-h-screen;
-  }
-
-  .sidebar-nav-header {
-    @apply p-6 border-b border-gray-200;
-  }
-
-  .sidebar-nav-title {
-    @apply text-lg font-semibold text-gray-900;
-  }
-
-  .sidebar-nav-content {
-    @apply px-4 py-6;
-  }
-
-  /* Collapsible Navigation Items */
-  .nav-item-collapsible {
-    @apply relative;
-  }
-
-  .nav-item-collapsible-trigger {
-    @apply flex items-center justify-between w-full;
-  }
-
-  .nav-item-collapsible-icon {
-    @apply h-4 w-4 transition-transform;
-  }
-
-  .nav-item-collapsible-icon-open {
-    @apply rotate-180;
-  }
-
-  .nav-item-collapsible-content {
-    @apply ml-4 mt-2 space-y-1;
-  }
-
-  /* Nested Navigation */
-  .nav-item-nested {
-    @apply pl-8 text-sm;
-  }
-
-  .nav-item-nested-2 {
-    @apply pl-12 text-sm;
-  }
-
-  /* Breadcrumb Navigation (already exists but adding here for completeness) */
-  .nav-breadcrumb {
-    @apply flex items-center space-x-2 text-sm;
-  }
-
-  .nav-breadcrumb-item {
-    @apply text-gray-600 hover:text-gray-900;
-  }
-
-  .nav-breadcrumb-separator {
-    @apply text-gray-400;
-  }
-
-  .nav-breadcrumb-current {
-    @apply text-gray-900 font-medium;
-  }
-
-  /* Pills Navigation */
-  .nav-pills {
-    @apply flex items-center space-x-2 p-1 bg-gray-100 rounded-lg;
-  }
-
-  .nav-pill {
-    @apply px-4 py-2 text-sm font-medium text-gray-600 rounded-md transition-colors;
-  }
-
-  .nav-pill:hover {
-    @apply text-gray-900 bg-gray-50;
-  }
-
-  .nav-pill-active {
-    @apply text-gray-900 bg-white shadow-sm;
-  }
-
-  /* Tabs Navigation (extending existing) */
-  .nav-tabs {
-    @apply flex items-center border-b border-gray-200;
-  }
-
-  .nav-tab {
-    @apply px-4 py-2 text-sm font-medium text-gray-600 border-b-2 border-transparent hover:text-gray-900 hover:border-gray-300 transition-colors;
-  }
-
-  .nav-tab-active {
-    @apply text-light-blue-600 border-light-blue-600;
-  }
-
-  /* Dots/Steps Navigation */
-  .nav-dots {
-    @apply flex items-center space-x-2;
-  }
-
-  .nav-dot {
-    @apply w-2 h-2 bg-gray-300 rounded-full transition-colors cursor-pointer;
-  }
-
-  .nav-dot:hover {
-    @apply bg-gray-400;
-  }
-
-  .nav-dot-active {
-    @apply bg-light-blue-600 w-8;
-  }
-
-  /* Mobile Navigation Toggle */
-  .nav-toggle {
-    @apply p-2 rounded-md hover:bg-gray-100 lg:hidden;
-  }
-
-  .nav-toggle-icon {
-    @apply h-6 w-6 text-gray-600;
-  }
-  /* HTML and Body defaults */
-  html {
-    @apply scroll-smooth text-base antialiased;
-    -webkit-text-size-adjust: 100%;
-    text-rendering: optimizeLegibility;
-  }
-
-  body {
-    @apply m-0 min-h-screen bg-gray-100 p-0 font-sans text-base text-gray-900;
-  }
-
-  /* Typography defaults */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply mt-0 mb-4 font-sans leading-tight font-bold text-gray-900;
-  }
-
-  h1 {
-    @apply text-[32px] leading-tight font-bold text-gray-800;
-  }
-
-  h2 {
-    @apply text-[28px] leading-tight font-semibold;
-  }
-
-  h3 {
-    @apply text-[24px] leading-tight font-semibold;
-  }
-
-  h4 {
-    @apply text-[20px] leading-tight font-semibold;
-  }
-
-  h5 {
-    @apply text-[18px] leading-tight font-semibold;
-  }
-
-  h6 {
-    @apply text-[16px] leading-tight font-medium;
-  }
-
-  p {
-    @apply mt-0 mb-4 leading-relaxed;
-  }
-
-  /* Link defaults */
-  a {
-    @apply text-blue-600 no-underline;
-  }
-
-  a:hover {
-    @apply text-blue-700 underline;
-  }
-
-  /* List defaults */
-  ul,
-  ol {
-    @apply mt-0 mb-4 pl-6;
-  }
-
-  li {
-    @apply mb-2;
-  }
-
-  /* Form element defaults */
-  input,
-  textarea,
-  select,
-  button {
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-  }
-
-  input,
-  textarea,
-  select {
-    @apply bg-white;
-  }
-
-  form,
-  fieldset {
-    @apply rounded-lg bg-white p-4;
-  }
-
-  /* Image defaults */
-  img {
-    @apply h-auto max-w-full;
-  }
-
-  /* Table defaults */
-  table {
-    @apply border-collapse;
-  }
-
-  /* Code defaults */
-  code {
-    @apply font-mono text-sm;
-  }
-
-  pre {
-    @apply mt-0 mb-4 overflow-x-auto font-mono text-sm;
-  }
-
-  pre code {
-    @apply p-0;
-  }
-
-  /* Blockquote defaults */
-  blockquote {
-    @apply text-light-blue-800 border-light-blue-500 mt-4 mr-0 mb-4 ml-0 border-l-4 pl-4 italic;
-  }
-
-  /* HR defaults */
-  hr {
-    @apply mt-8 mb-8 h-px border-0 bg-gray-200;
-  }
-
-  /* Selection styles */
-  ::selection {
-    @apply bg-blue-200 text-gray-900;
-  }
-
-  ::-moz-selection {
-    @apply bg-blue-200 text-gray-900;
-  }
-
-  /* Focus visible for accessibility */
-  :focus-visible {
-    @apply outline outline-2 outline-offset-2 outline-blue-500;
-  }
-
-  /* Remove default focus styles for mouse users */
-  :focus:not(:focus-visible) {
-    @apply outline-none;
-  }
-}
-
 @layer components {
   /* Button Components */
   .btn {
@@ -1706,6 +1378,192 @@
 
   .avatar-xl.avatar-fallback {
     @apply text-lg;
+  }
+
+  /* Navigation Components */
+
+  /* Base Navigation Container */
+  .nav {
+    @apply px-4 pb-6;
+  }
+
+  .nav-vertical {
+    @apply flex flex-col space-y-1;
+  }
+
+  .nav-horizontal {
+    @apply flex flex-row items-center space-x-2;
+  }
+
+  /* Navigation Items */
+  .nav-item {
+    @apply flex items-center px-4 py-2 text-sm font-medium rounded-md transition-colors;
+  }
+
+  /* Default State */
+  .nav-item-default {
+    @apply text-gray-600 hover:text-gray-900 hover:bg-gray-50;
+  }
+
+  /* Active/Selected State */
+  .nav-item-active {
+    @apply text-light-blue-700 bg-light-blue-50;
+  }
+
+  /* Disabled State */
+  .nav-item-disabled {
+    @apply text-gray-400 cursor-not-allowed hover:bg-transparent hover:text-gray-400;
+  }
+
+  /* Size Variants */
+  .nav-item-sm {
+    @apply px-3 py-1.5 text-xs;
+  }
+
+  .nav-item-lg {
+    @apply px-5 py-3 text-base;
+  }
+
+  /* Navigation with Icons */
+  .nav-item-icon {
+    @apply mr-3 h-5 w-5;
+  }
+
+  .nav-item-icon-right {
+    @apply ml-3 h-5 w-5;
+  }
+
+  /* Navigation Groups */
+  .nav-group {
+    @apply mb-6;
+  }
+
+  .nav-group-title {
+    @apply px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider;
+  }
+
+  .nav-group-items {
+    @apply mt-2 space-y-1;
+  }
+
+  /* Sidebar Navigation Container */
+  .sidebar-nav {
+    @apply w-64 bg-white border-r border-gray-200 min-h-screen;
+  }
+
+  .sidebar-nav-header {
+    @apply p-6 border-b border-gray-200;
+  }
+
+  .sidebar-nav-title {
+    @apply text-lg font-semibold text-gray-900;
+  }
+
+  .sidebar-nav-content {
+    @apply px-4 py-6;
+  }
+
+  /* Collapsible Navigation Items */
+  .nav-item-collapsible {
+    @apply relative;
+  }
+
+  .nav-item-collapsible-trigger {
+    @apply flex items-center justify-between w-full;
+  }
+
+  .nav-item-collapsible-icon {
+    @apply h-4 w-4 transition-transform;
+  }
+
+  .nav-item-collapsible-icon-open {
+    @apply rotate-180;
+  }
+
+  .nav-item-collapsible-content {
+    @apply ml-4 mt-2 space-y-1;
+  }
+
+  /* Nested Navigation */
+  .nav-item-nested {
+    @apply pl-8 text-sm;
+  }
+
+  .nav-item-nested-2 {
+    @apply pl-12 text-sm;
+  }
+
+  /* Breadcrumb Navigation (already exists but adding here for completeness) */
+  .nav-breadcrumb {
+    @apply flex items-center space-x-2 text-sm;
+  }
+
+  .nav-breadcrumb-item {
+    @apply text-gray-600 hover:text-gray-900;
+  }
+
+  .nav-breadcrumb-separator {
+    @apply text-gray-400;
+  }
+
+  .nav-breadcrumb-current {
+    @apply text-gray-900 font-medium;
+  }
+
+  /* Pills Navigation */
+  .nav-pills {
+    @apply flex items-center space-x-2 p-1 bg-gray-100 rounded-lg;
+  }
+
+  .nav-pill {
+    @apply px-4 py-2 text-sm font-medium text-gray-600 rounded-md transition-colors;
+  }
+
+  .nav-pill:hover {
+    @apply text-gray-900 bg-gray-50;
+  }
+
+  .nav-pill-active {
+    @apply text-gray-900 bg-white shadow-sm;
+  }
+
+  /* Tabs Navigation (extending existing) */
+  .nav-tabs {
+    @apply flex items-center border-b border-gray-200;
+  }
+
+  .nav-tab {
+    @apply px-4 py-2 text-sm font-medium text-gray-600 border-b-2 border-transparent hover:text-gray-900 hover:border-gray-300 transition-colors;
+  }
+
+  .nav-tab-active {
+    @apply text-light-blue-600 border-light-blue-600;
+  }
+
+  /* Dots/Steps Navigation */
+  .nav-dots {
+    @apply flex items-center space-x-2;
+  }
+
+  .nav-dot {
+    @apply w-2 h-2 bg-gray-300 rounded-full transition-colors cursor-pointer;
+  }
+
+  .nav-dot:hover {
+    @apply bg-gray-400;
+  }
+
+  .nav-dot-active {
+    @apply bg-light-blue-600 w-8;
+  }
+
+  /* Mobile Navigation Toggle */
+  .nav-toggle {
+    @apply p-2 rounded-md hover:bg-gray-100 lg:hidden;
+  }
+
+  .nav-toggle-icon {
+    @apply h-6 w-6 text-gray-600;
   }
 }
 
